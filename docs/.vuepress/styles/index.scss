@@ -318,3 +318,27 @@ html.dark table {
 html.dark thead {
   background: var(--c-brand-dark);
 }
+
+/* Style for the Generate God button */
+.fantasy-button {
+  background: var(--c-brand) !important;
+  border: 2px solid var(--c-brand-dark) !important;
+  color: var(--c-bg-lighter) !important;
+  font-family: 'IM Fell English SC', serif !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.08em;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.fantasy-button:hover {
+  background: var(--c-brand-light) !important;
+  border-color: var(--c-accent) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(139, 46, 31, 0.4);
+}
