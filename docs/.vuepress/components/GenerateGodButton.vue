@@ -4,8 +4,9 @@
     <div v-if="generated">
       <p>
         The {{ godType }} of
-        <a :href="domain1Link">{{ displayDomain1 }}</a> and
-        <a :href="domain2Link">{{ displayDomain2 }}</a>.
+        <a :href="domain1Link">{{ displayDomain1 }}</a> &amp;
+        <a :href="domain2Link">{{ displayDomain2 }}</a>,
+        {{ question }}
       </p>
     </div>
   </div>
@@ -32,12 +33,24 @@ export default {
       godTypes: [
         "godling", "demigod", "god", "forgotten God", "elder God", "fallen God"
       ],
+      traits: [
+        "Wrathful", "Petty", "Lustful", "Vengeful", "Magnanimous", "Fickle"
+      ],
+      questions: {
+        "demigod": "How does their ambition show?",
+        "godling": "They are obviously the bottom of the divine food chain, how can you tell?",
+        "god": "They are famously {trait}, what affirmation have you experienced?",
+        "forgotten God": "How did you find them?",
+        "fallen God": "What instigated their downfall?",
+        "elder God": "What gives away their age?"
+      },
       generated: false,
       domain1: "",
       domain2: "",
       godType: "",
       displayDomain1: "",
-      displayDomain2: ""
+      displayDomain2: "",
+      question: ""
     };
   },
   computed: {
@@ -50,8 +63,18 @@ export default {
   },
   methods: {
     generateGod() {
+      // Select God Type
       this.godType = this.godTypes[Math.floor(Math.random() * this.godTypes.length)];
 
+      // Generate Question based on God Type
+      let questionText = this.questions[this.godType];
+      if (this.godType === 'god') {
+        const trait = this.traits[Math.floor(Math.random() * this.traits.length)];
+        questionText = questionText.replace('{trait}', trait);
+      }
+      this.question = questionText;
+
+      // Select two different domains
       let d1Index = Math.floor(Math.random() * this.domains.length);
       let d2Index;
       do {
