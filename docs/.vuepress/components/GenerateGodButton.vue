@@ -2,14 +2,11 @@
   <div>
     <button @click="generateGod">Generate God</button>
     <div v-if="generated">
-      <p>Your new god has the following domains:</p>
-      <ul>
-        <li><a :href="domain1Link">{{ domain1 }}</a></li>
-        <li><a :href="domain2Link">{{ domain2 }}</a></li>
-      </ul>
-      <div v-if="isAnimalAndElement">
-        <p>Your god is a god of {{ animal }} and {{ element }}.</p>
-      </div>
+      <p>
+        The {{ godType }} of
+        <a :href="domain1Link">{{ displayDomain1 }}</a> and
+        <a :href="domain2Link">{{ displayDomain2 }}</a>.
+      </p>
     </div>
   </div>
 </template>
@@ -32,11 +29,15 @@ export default {
         "Wolf", "Bear", "Eagle", "Boar", "Serpent", "Stag", "Spider",
         "Gryphon", "Manticore", "Chimera"
       ],
+      godTypes: [
+        "godling", "demigod", "god", "forgotten God", "elder God", "fallen God"
+      ],
       generated: false,
       domain1: "",
       domain2: "",
-      animal: "",
-      element: ""
+      godType: "",
+      displayDomain1: "",
+      displayDomain2: ""
     };
   },
   computed: {
@@ -53,6 +54,8 @@ export default {
   },
   methods: {
     generateGod() {
+      this.godType = this.godTypes[Math.floor(Math.random() * this.godTypes.length)];
+
       let d1Index = Math.floor(Math.random() * this.domains.length);
       let d2Index;
       do {
@@ -62,12 +65,20 @@ export default {
       this.domain1 = this.domains[d1Index];
       this.domain2 = this.domains[d2Index];
 
+      this.displayDomain1 = this.domain1;
+      this.displayDomain2 = this.domain2;
+
       if (this.isAnimalAndElement) {
-        this.animal = this.animals[Math.floor(Math.random() * this.animals.length)];
-        this.element = this.elements[Math.floor(Math.random() * this.elements.length)];
-      } else {
-        this.animal = "";
-        this.element = "";
+        const animal = this.animals[Math.floor(Math.random() * this.animals.length)];
+        const element = this.elements[Math.floor(Math.random() * this.elements.length)];
+
+        if (this.domain1 === 'Animal') {
+            this.displayDomain1 = animal;
+            this.displayDomain2 = element;
+        } else {
+            this.displayDomain1 = element;
+            this.displayDomain2 = animal;
+        }
       }
 
       this.generated = true;
