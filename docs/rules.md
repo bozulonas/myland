@@ -4,7 +4,7 @@
 
 ### Attributes
 
-Characters have three main attributes: **Strength (STR)**, **Dexterity (DEX)**, and **Willpower (WIL)**. To make a test, roll a d20. If the result is *less than or equal to* the relevant attribute, it's a success..
+Characters have three main attributes: **Strength (STR)**, **Dexterity (DEX)**, and **Willpower (WIL)**. To make a test, roll a d20. If the result is *less than or equal to* the relevant attribute, it's a success..Test of obsidian edits.
 
 ### Healing & Recovery
 
