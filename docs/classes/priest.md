@@ -23,4 +23,3 @@
 ---
 See also:
 - [The Gods & Divine Favor](../gods.md)
-- [Divine Domains](../divine-domains.md)

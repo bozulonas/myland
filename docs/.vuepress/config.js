@@ -10,6 +10,7 @@ export default defineUserConfig({
       { text: 'Home', link: '/' },
       { text: 'Rules', link: '/rules' },
       { text: 'Classes', link: '/classes' },
+      { text: 'Gods', link: '/gods' },
     ],
     // Enable sidebar on all pages
     sidebar: {
