@@ -1,0 +1,54 @@
+/* VuePress 2 Palette - CSS Variables Override */
+
+/* Fantasy TTRPG Color Scheme */
+:root {
+  /* Primary brand colors - deep burgundy and gold */
+  --vp-c-brand: #8b2e1f;
+  --vp-c-brand-light: #a64632;
+  --vp-c-brand-dark: #6b1f14;
+  --vp-c-brand-darker: #4a1410;
+  
+  /* Accent colors - antique gold */
+  --vp-c-accent: #d4af37;
+  --vp-c-accent-light: #e6c966;
+  --vp-c-accent-dark: #b8941f;
+  
+  /* Background - parchment tones */
+  --vp-c-bg: #f5f1e8;
+  --vp-c-bg-alt: #faf8f2;
+  --vp-c-bg-elv: #e8e0d0;
+  
+  /* Text colors */
+  --vp-c-text-1: #2c1810;
+  --vp-c-text-2: #5a4a3a;
+  --vp-c-text-3: #7a6a5a;
+  
+  /* Border colors */
+  --vp-c-border: #d4c4a8;
+  --vp-c-gutter: #b8a888;
+  --vp-c-divider: #d4c4a8;
+}
+
+/* Dark mode - aged leather and candlelight */
+.dark {
+  --vp-c-brand: #d4af37;
+  --vp-c-brand-light: #e6c966;
+  --vp-c-brand-dark: #b8941f;
+  --vp-c-brand-darker: #8b6914;
+  
+  --vp-c-accent: #cd7f32;
+  --vp-c-accent-light: #e09856;
+  --vp-c-accent-dark: #a86728;
+  
+  --vp-c-bg: #1a1410;
+  --vp-c-bg-alt: #2a2218;
+  --vp-c-bg-elv: #3a3228;
+  
+  --vp-c-text-1: #e8e0d0;
+  --vp-c-text-2: #c8c0b0;
+  --vp-c-text-3: #a8a090;
+  
+  --vp-c-border: #4a3a28;
+  --vp-c-gutter: #3a2a18;
+  --vp-c-divider: #4a3a28;
+}
