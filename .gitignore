@@ -24,3 +24,6 @@ pnpm-debug.log*
 
 # OS files
 Thumbs.db
+
+# Environment files
+.env
