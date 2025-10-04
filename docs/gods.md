@@ -5,11 +5,11 @@
 ## Pantheon
 *This section is under construction.*
 
-### Divine Disfavor Table
+### Hubris Table
 
-When you ask for too much, the gods may punish you.
+When you roll doubles, you've asked for too much, the gods punish you.
 
-| Roll | Result |
+| Sum | Consequence |
 |:---:|:---|
 | 1 | A god puts before you a **test of faith**, which you must overcome alone. |
 | 2 | Hubris begets ruin. Suffer **disadvantage** on saves for the rest of the session. |

@@ -6,8 +6,8 @@
 
 ### Level 1
 *   **Worship**: Gain a blessing (minor ability), a invocation of your choice and 1 Favor Dice by appeasing a known God (or supernatural entity).
-*   **Appeasement**: Perform a rite with a suitable offering, at a sufficiently sacred site, that shows befitting humility. Perform a major appeasement for worship, or a minor one for favor dice.
-*   **Invocation**: Gain Favor Dice from appeasing your god. Doubles cause hubris, tripples cause banishment. Does not cause fatigue.
+*   **Appeasement**: Perform a rite with a suitable offering, at a sufficiently sacred site, that shows befitting humility. Perform a major appeasement for worship, or a minor one for 1 favor dice.
+*   **Invocation**: Cast [magic](/rules.md#magic) by spening any number of available Favor Dice (d6). Gain Favor Dice by appeasing your god. Doubles cause hubris, tripples cause banishment. Does not cause fatigue.
 
 ### Level 2
 *   **Worship**
