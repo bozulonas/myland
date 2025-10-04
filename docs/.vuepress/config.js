@@ -69,10 +69,10 @@ export default defineUserConfig({
           text: 'Player Classes',
           collapsible: true,
           children: [
-            { text: 'The Priest', link: '/classes#the-priest' },
-            { text: 'The Sorcerer', link: '/classes#the-sorcerer' },
-            { text: 'The Thief', link: '/classes#the-thief' },
-            { text: 'The Wizard', link: '/classes#the-wizard' },
+            { text: 'Priest', link: '/classes#the-priest' },
+            { text: 'Fighter', link: '/classes#the-fighter' },
+            { text: 'Thief', link: '/classes#the-thief' },
+            { text: 'Wizard', link: '/classes#the-wizard' },
           ],
         },
         {

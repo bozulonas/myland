@@ -44,7 +44,7 @@ A test can become easier or harder in two ways:
 - To cast magic, invest a number of _Mana Dice_ (d6) of your choice, up to the number you have access to. Spells will refer number of [dice] and the [sum]. 
 - The way most adventurers cast magic is from using **spell books** they loot.
 - **Spell books** take one inventory slot, normally contain one spell and each casting adds fatigue to your inventory. It takes one dungeon turn to cast from one (cannot be done in combat).
-- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap](#mishaps).
+- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap]().
 
 ## Combat & Danger
 

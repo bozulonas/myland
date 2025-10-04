@@ -2,7 +2,7 @@
 
 Choose a class to define your character's abilities and role in the party.
 
-## The Priest
+## Priest
 
 ![Five priests in ceremonial robes](/images/priests.jpg)
 
@@ -61,109 +61,66 @@ The Priest has access to many divine domains. Each domain has specific commands 
 
 ---
 
-## The Sorcerer
+## Fighter
 
-*Sorcerers alter the world through sheer force of will. They wear ridiculous outfits and say things like 'Stones! Heed the words of Ziwilgo!'*
+![A stoic warrior in full plate armor](/images/fighter.jpg)
 
-### Prerequisites
-
-**Prerequisite**: Exposure to a lethal dose of chaos radiation (and survive), or be born with it.
+*For some, the answer to any problem is a sharp piece of steel.*
 
 ### Class Features
 
-#### Level A: Force of Will
+#### Level A: Grit & Training
 
-To change the world, choose an ability (**Alter**, **Harm** or **Create**) and a number of **Sorcerer Dice (SD)**. SD never deplete. Every time you cast, you will also add **Instability Dice (ID)** to a daily pool which are also rolled. **Doubles, triples and quadruples** will cause you to roll on the Sorcerer Mishap table. ID do not count to the effectiveness of the spell, but can trigger mishaps. ID reset at the beginning of each day.
+**Grit**: You can ignore the first instance of fatigue you gain.
 
-**Alter**: Make a declarative statement about a target creature or object. You cannot cause harm or move them.
-- +1 ID for each prior use of Force of Will today
-- +1 ID per additional target
-- +1/2/3 ID to affect wagon-size/house-size/village-size
-- +1/2/3 ID to last Rd [Dice] Rounds/Minutes/Days
+**Training**: You have mastered a particular combat technique. Choose one **Feat** from the list below.
 
-**Harm**: Deal **[Sum]** damage to a Nearby target.
-- +1 ID for each prior use of Force of Will today
-- +1 ID per additional target
+#### Level B: More Grit, More Training
 
-**Create**: Create something for Rd [Dice] Rounds. Creatures created are LVL2 but are semi-illusory and cannot deal damage. Items cannot directly harm others but can have magical effects (flying carpet, invisible log). Potion effects only last as long as the spell.
-- +1 ID for each prior use of Force of Will today
-- +1 ID per additional object
-- +1 ID for a 4LVL Creature
-- +1/2/3 ID to affect wagon-size/house-size/village-size
-- +1/2/3 ID to last Rd [Dice] Rounds/Minutes/Days
+**Grit**: Your Grit increases. You can now ignore the first **two** instances of fatigue.
 
-#### Level B: Flashy Robes
+**Training**: You learn another **Feat** of your choice.
 
-You may invest more money into your flashy outfit. Record how much it costs. At each level, treat it like armour of the corresponding AV, including inventory slots taken.
+#### Level C: Even More Grit & Training
 
-| Cost | Armour Value (AV) | Inventory Slots |
-|---|---|---|
-| Base | AV1 | 1 |
-| 50 coins | AV2 | 2 |
-| 200 coins | AV3 | 3 |
-| 500 coins | AV4 | 4 |
+**Grit**: Your Grit increases. You can now ignore the first **three** instances of fatigue.
 
-#### Level C: Perceive Reality
+**Training**: You learn another **Feat** of your choice.
 
-You can see the *true nature* of others. You can locate invisible creatures, see ghosts and tell if someone is undead. You can tell if someone is a spellcaster. The price is you permanently lose **1d6 WIL** (you are alienated from others).
+#### Level D: Peak Grit & Epithet of Renown
 
-#### Level D: Sentient Robes
+**Grit**: Your Grit is maxed out. You can now ignore the first **four** instances of fatigue.
 
-Your robes have been infused with magic after being worn by you for so long. They are now animated and respond to your commands. They can manipulate small objects, fly, and serve as a magic carpet for you. If they are put in harm's way, they risk becoming damaged and are exorbitantly expensive to repair.
+**Epithet of Renown**: You have become a renowned warrior. Choose an epithet for yourself based on your deeds (e.g., "The Orc-Slayer," "Iron-Wall"). When you enter a new settlement, you are likely to be recognized, and you can call upon the local populace for 1d6 minor favors.
+
+### Feats
+
+Activating a feat in combat incurs 1 fatigue unless its description says otherwise.
+
+#### Defensive Feats
+
+*   **Block**: Impair a d6 or d8 attack. This does not incur fatigue if you are wielding a shield.
+*   **Dodge**: Impair a d8 or d10 attack. This does not incur fatigue if you are equipped with no more than light armor (1 Armor) and a d6 weapon.
+*   **Parry**: When targeted by a melee attack, roll your weapon's damage die versus the incoming attack's damage die.
+    *   **If you roll higher**: You nullify the attack and deal your roll as STR damage to the attacker, bypassing their armor.
+    *   **If you roll lower**: You take the attacker's roll as STR damage, bypassing your armor.
+    *   **If you tie**: Your weapons clang off each other, and the attack is nullified.
+    *   This feat does not incur fatigue.
+
+#### Offensive Feats
+
+*   **Power Attack**: Add +1d12 damage to your melee attack. Make a STR test to avoid incurring fatigue.
+*   **Maneuver**: Add a tactical maneuver (e.g., trip, disarm, push) to your attack. Make two DEX tests. You can use the results as you wish to avoid incurring fatigue and to avoid any negative consequences of the maneuver.
+*   **Cleave**: Your melee attack affects all targets in a specific area (e.g., all enemies in front of you). This stacks with the cleave property of weapons like the battle axe.
 
 ### Starting Equipment
 
-- Outlandish costume (provides 1 Armor, roll on table below)
-
-### Outlandish Outfits (1d6)
-
-| Roll | Outfit |
-|:---:|:---|
-| 1 | Cloak with animated images of your face |
-| 2 | Lady Gaga meat-dress. *The meat is alive* |
-| 3 | Coat made of animated gold (not actually gold) |
-| 4 | Hieronymus Bosch painting, but a robe |
-| 5 | Outfit made entirely of amulets and charms |
-| 6 | Nude, but with fabulous head-dress |
-
-### Sorcerer Mishaps
-
-#### Rolled Doubles when Casting (1d6)
-
-| Roll | Result |
-|:---:|:---|
-| 1 | Bright sparks fly from your ears. |
-| 2 | You make a noise like a thunderclap. |
-| 3 | A strong wind billows, extinguishing torches. |
-| 4 | You start to hiss, and steam rises from you. |
-| 5 | Take **1** damage. |
-| 6 | Take **1d6** damage. |
-
-#### Rolled Triples when Casting (1d6)
-
-| Roll | Result |
-|:---:|:---|
-| 1 | Effect targets something else instead. |
-| 2 | Teleport somewhere you don't want to be. |
-| 3 | Random mutation. Test **Str** or it is permanent. See the [Mutations Tab](#mutations). |
-| 4 | Add **+1 ID** to your pool. Take 1 damage. |
-| 5 | Raw magic. Take **Ongoing Damage** for Rd6 rounds. |
-| 6 | **Explode**. Everyone Nearby takes **2d6** damage, including you. *Ignores your armour.* |
-
-#### Rolled Quadruples when Casting (1d6)
-
-| Roll | Result |
-|:---:|:---|
-| 1 | Spell effect is reversed to create the opposite effect. |
-| 2 | Permanent random mutation. See the [Mutations Tab](#mutations). |
-| 3 | Lose **1d6** Permanently from a random stat. |
-| 4 | Roll on the Injury and Death table. |
-| 5 | A **LVL5 Void Creature** emerges to eat your soul. |
-| 6 | **Explode**. Everyone Nearby takes **4d6** damage, including you. *Ignores your armour.* |
+-   Medium armor (2 Armor)
+-   A shield or a two-handed weapon
+-   A one-handed weapon of your choice
+-   Rations for 3 days
 
 ---
-
-## The Thief
 
 *What's yours is mine, and what's mine is also mine.*
 
@@ -198,7 +155,7 @@ When striking a vulnerable opponent, your [enhanced attack](#attacks) deals 2d12
 
 ---
 
-## The Wizard
+## Wizard
 
 ![A robed wizard with a long beard reading a book](/images/wizard.jpg)
 
@@ -206,26 +163,30 @@ When striking a vulnerable opponent, your [enhanced attack](#attacks) deals 2d12
 
 ### Prerequisites
 
-* 1d4 years of study at an institute or apprenticed to a master.
-* Take on student loans: 5g per wizard level per adventure.
+*   1d4 years of study at an institute or apprenticed to a master.
+*   Take on student loans: 5g per wizard level per adventure. If you fail to pay, the bursar will come for you.
 
 ### Class Features
 
-#### Level A: Study
+#### Level A: Study, Memorization, and Writing
 
-Each time you gain a Wizard level, you can spend a week studying a spellbook you have access to: gain its knowledge, and roll to learn another one of its spells. ([Example spellbooks](https://saltygoo.github.io/class/wizard))
+**Study**: Spend a week studying an available spellbook: gain its knowledge (a minor ability) and learn one of its spells of your choice. ([Example spellbooks](https://saltygoo.github.io/class/wizard))
 
-#### Level A: Memorization
+**Memorization**: You can cast spells from memory rather than from books. Each memorized spell takes 1 inventory slot. When cast, you retroactively choose what spell it was, then replace it with fatigue. Casting a memorized spell can be done in combat.
 
-You can cast spells from memory rather than from books. Each memorized spell takes 1 inventory slot. When cast, you retroactively choose what spell it was, then replace it with fatigue. Casting a memorized spell can be done in combat.
+**Writing**: You can combine spellbooks, freeing up inventory slots.
 
-#### Level B: Ritual
+#### Level B: Study
 
-You can use the site, trappings and performance of ritual to grant additional *Mana Dice*. See [here](https://caput-caprae.blogspot.com/2020/11/ritual-elements-in-glog-magic.html) for a guide.
+As the Level A **Study** ability.
 
-#### Level C/D: Study
+#### Level C: Study
 
-As before, but you can choose the spell.
+As the Level A **Study** ability.
+
+#### Level D: Ritualist
+
+**Ritual**: At a suitable site of power, with appropriate trappings and a convincing performance you can conjure any magic effect you dream of. The GM stipulates it's prerequisites, see [here]( https://caput-caprae.blogspot.com/2020/11/ritual-elements-in-glog-magic.html?m=1) for a guide.
 
 ### Starting Equipment
 
