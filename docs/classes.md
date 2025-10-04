@@ -4,7 +4,7 @@ Choose a class to define your character's abilities and role in the party.
 
 ## The Priest
 
-![Five priests in ceremonial robes](./images/priests.jpg)
+![Five priests in ceremonial robes](/images/priests.jpg)
 
 *The gods are many, and their demands are great.*
 
@@ -200,7 +200,7 @@ When striking a vulnerable opponent, your [enhanced attack](#attacks) deals 2d12
 
 ## The Wizard
 
-![A robed wizard with a long beard reading a book](./images/wizard.jpg)
+![A robed wizard with a long beard reading a book](/images/wizard.jpg)
 
 *Reckless academics.*
 
