@@ -27,22 +27,22 @@ export default {
         "Magma", "Radiance", "Shadow", "Uranium"
       ],
       animals: [
-        "Wolf", "Bear", "Eagle", "Boar", "Serpent", "Stag", "Spider",
-        "Gryphon", "Manticore", "Chimera"
+        "Wolfs", "Bears", "Eagles", "Boar", "Serpents", "Stags", "Spiders",
+        "Gryphons", "Manticores", "Chimeras"
       ],
       godTypes: [
-        "godling", "demigod", "god", "forgotten God", "elder God", "fallen God"
+        "godling", "demigod", "god", "forgotten god", "elder god", "fallen god"
       ],
       traits: [
         "Wrathful", "Petty", "Lustful", "Vengeful", "Magnanimous", "Fickle"
       ],
       questions: {
-        "demigod": "How does their ambition show?",
-        "godling": "They are obviously the bottom of the divine food chain, how can you tell?",
-        "god": "They are famously {trait}, what affirmation have you experienced?",
-        "forgotten God": "How did you find them?",
-        "fallen God": "What instigated their downfall?",
-        "elder God": "What gives away their age?"
+        "demigod": "how does their ambition show?",
+        "godling": "they are obviously the bottom of the divine food chain, how can you tell?",
+        "god": "they are famously {trait}, what affirmation have you experienced?",
+        "forgotten god": "how did you find them?",
+        "fallen god": "what instigated their downfall?",
+        "elder god": "what gives away their age?"
       },
       generated: false,
       domain1: "",
