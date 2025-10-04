@@ -37,3 +37,8 @@ Who are you? [Gain a class level](/rules.md#advancement) by spending XP, or you 
 </div>
 
 </div>
+
+---
+See also:
+- [The Gods & Divine Favor](/gods.md)
+- [Divine Domains](/divine-domains.md)
