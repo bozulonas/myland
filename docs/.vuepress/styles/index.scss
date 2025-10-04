@@ -177,6 +177,17 @@ body, p, li, td, th {
 }
 
 /* Make internal links more visually distinct */
+a {
+  color: var(--c-accent-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--c-accent);
+}
+
 a[href^="#"] {
   text-decoration: underline;
   text-decoration-style: dotted;

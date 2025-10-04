@@ -24,7 +24,7 @@ Make a test to see how an action you performed in the past impacts the current s
 
 #### Level D: Backstab
 
-When striking a vulnerable opponent, your [enhanced attack](#attacks) deals 2d12 instead of its normal dice.
+When striking a vulnerable opponent, your [enhanced](/rules.md#attacks) attack deals 2d12 instead of its normal dice.
 
 ### Starting Equipment
 
