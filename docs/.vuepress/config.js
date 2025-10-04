@@ -70,4 +70,9 @@ export default defineUserConfig({
   lang: 'en-US',
   title: 'Your Game\'s Name',
   description: 'Official rules website for our TTRPG',
+  
+  // Add footer with license
+  head: [
+    ['meta', { name: 'license', content: 'CC BY 4.0' }],
+  ],
 })
