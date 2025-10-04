@@ -22,6 +22,7 @@ export default defineUserConfig({
             { text: 'Healing & Recovery', link: '/rules#healing-recovery' },
             { text: 'Armor', link: '/rules#armor' },
           ],
+          class: 'custom-sidebar',
         },
         {
           text: 'Actions',
@@ -31,6 +32,7 @@ export default defineUserConfig({
             { text: 'Raise the Stakes', link: '/rules#raise-the-stakes-aka-devils-bargain' },
             { text: 'Gambit', link: '/rules#gambit' },
           ],
+          class: 'custom-sidebar',
         },
         {
           text: 'Core Mechanics',
@@ -39,6 +41,7 @@ export default defineUserConfig({
             { text: 'Difficulty', link: '/rules#difficulty' },
             { text: 'Magic', link: '/rules#magic' },
           ],
+          class: 'custom-sidebar',
         },
         {
           text: 'Combat & Danger',
@@ -53,6 +56,7 @@ export default defineUserConfig({
             { text: 'Reactions', link: '/rules#reactions' },
             { text: 'Morale', link: '/rules#morale' },
           ],
+          class: 'custom-sidebar',
         },
         {
           text: 'Growth & Advancement',
@@ -62,6 +66,7 @@ export default defineUserConfig({
             { text: 'Earning XP', link: '/rules#earning-xp' },
             { text: 'Advancement', link: '/rules#advancement' },
           ],
+          class: 'custom-sidebar',
         },
       ],
       '/classes/': [
@@ -73,6 +78,7 @@ export default defineUserConfig({
             { text: 'Thief', link: '/classes/thief.html' },
             { text: 'Wizard', link: '/classes/wizard.html' },
           ],
+          class: 'custom-sidebar',
         },
       ],
     },

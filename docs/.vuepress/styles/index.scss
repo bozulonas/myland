@@ -179,17 +179,17 @@ body, p, li, td, th {
 /* Make internal links more visually distinct */
 a {
   color: var(--c-accent-dark);
-  text-decoration: none;
+  text-decoration: none !important;
   transition: color 0.2s;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: var(--c-accent);
 }
 
 a[href^="#"] {
-  text-decoration: underline;
+  text-decoration: none !important;
   text-decoration-style: dotted;
   text-decoration-color: var(--c-brand);
   color: var(--c-brand);
@@ -198,6 +198,7 @@ a[href^="#"] {
 }
 
 a[href^="#"]:hover {
+  text-decoration: underline !important;
   text-decoration-style: solid;
   color: var(--c-accent-dark);
   text-decoration-color: var(--c-accent);

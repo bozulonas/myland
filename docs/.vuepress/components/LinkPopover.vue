@@ -28,8 +28,39 @@ const createPopover = () => {
   document.body.appendChild(popover)
 }
 
-const getContentById = (id) => {
-  const element = document.getElementById(id)
+const getContentById = async (href) => {
+  let [path, id] = href.split('#')
+
+  // Resolve the correct path to the HTML file
+  if (path) {
+    // Ensure we are fetching the HTML file, not the Markdown source
+    path = path.replace(/\.md$/, '.html');
+    // Make sure the path is absolute
+    if (!path.startsWith('/')) {
+      const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+      path = `${basePath}/${path}`;
+    }
+  }
+  
+  let doc
+  if (path && !window.location.pathname.endsWith(path)) {
+    // Fetch and parse the remote page if it's different from the current one
+    try {
+      const response = await fetch(path)
+      if (!response.ok) return null
+      const text = await response.text()
+      const parser = new DOMParser()
+      doc = parser.parseFromString(text, 'text/html')
+    } catch (error) {
+      console.error("Failed to fetch popover content:", error)
+      return null
+    }
+  } else {
+    // Use the current document if path is empty or the same
+    doc = document
+  }
+
+  const element = doc.getElementById(id)
   if (!element) return null
   
   // Get the heading and the content after it
@@ -72,17 +103,25 @@ const getContentById = (id) => {
   return fullContent
 }
 
-const handleMouseOver = (e) => {
-  const link = e.target.closest('a[href^="#"]')
+const handleMouseOver = async (e) => {
+  const link = e.target.closest('a[href]')
   if (!link || !popover) return
+
+  // Ignore links in the sidebar (TOC)
+  if (link.closest('.custom-sidebar')) {
+    return
+  }
   
+  const href = link.getAttribute('href')
+  
+  // Only show popover for links with a hash
+  if (!href || !href.includes('#')) return
+
   // Don't show popover if the link is inside a heading (h1-h6)
   const parentHeading = link.closest('h1, h2, h3, h4, h5, h6')
   if (parentHeading) return
   
-  const href = link.getAttribute('href')
-  const id = href.substring(1)
-  const content = getContentById(id)
+  const content = await getContentById(href)
   
   if (content) {
     popover.innerHTML = content
@@ -111,7 +150,7 @@ const handleMouseOver = (e) => {
 }
 
 const handleMouseOut = (e) => {
-  const link = e.target.closest('a[href^="#"]')
+  const link = e.target.closest('a[href]')
   if (!link || !popover) return
   
   popover.style.opacity = '0'
