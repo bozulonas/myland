@@ -3,7 +3,8 @@
 *The gods are many, and their demands are great. But to worship them is to know power.*
 
 ## Pantheon
-*This section is under construction.*
+
+<GenerateGodButton />
 
 ### Hubris Table
 
