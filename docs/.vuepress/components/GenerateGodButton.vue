@@ -8,11 +8,19 @@
         <a :href="domain2Link">{{ displayDomain2 }}</a>,
         {{ question }}. Blessing: Gain Luck when you adhere to their mandate at your own expense.
       </p>
+      <p><strong>Physical Form:</strong> {{ physicalForm }}</p>
+      <p><strong>Additional Feature:</strong> {{ additionalFeature }}</p>
+      <small>
+        Note: The following tables are missing and are needed for complete generation:
+        <code>Table 2-74</code>, <code>Table 2-61</code>, <code>Table 2-62</code>, <code>Table 2-60</code>, and <code>Table 2-79</code>.
+      </small>
     </div>
   </div>
 </template>
 
 <script>
+import { tables } from '../tableData.js';
+
 export default {
   data() {
     return {
@@ -50,7 +58,9 @@ export default {
       godType: "",
       displayDomain1: "",
       displayDomain2: "",
-      question: ""
+      question: "",
+      physicalForm: "",
+      additionalFeature: ""
     };
   },
   computed: {
@@ -62,6 +72,39 @@ export default {
     }
   },
   methods: {
+    resolveTableReferences(text) {
+      let resolvedText = text;
+      const tableRegex = /\(Table (\d+-\d+)\)/g;
+      let match;
+
+      while ((match = tableRegex.exec(resolvedText)) !== null) {
+        const tableId = match[1];
+        const replacement = this.getRandomTableEntry(tableId);
+        resolvedText = resolvedText.replace(match[0], replacement);
+      }
+
+      const browseRegex = /browse through Table (\d+-\d+)/g;
+      while ((match = browseRegex.exec(resolvedText)) !== null) {
+        const tableId = match[1];
+        const replacement = this.getRandomTableEntry(tableId);
+        resolvedText = resolvedText.replace(match[0], replacement);
+      }
+
+      return resolvedText;
+    },
+
+    getRandomTableEntry(tableId) {
+      const table = tables[tableId];
+      if (!table) {
+        return `(Missing Table ${tableId})`;
+      }
+      const randomIndex = Math.floor(Math.random() * table.length);
+      const randomRow = table[randomIndex];
+      const keys = Object.keys(randomRow).filter(key => key !== 'Die Roll');
+      const randomKey = keys[Math.floor(Math.random() * keys.length)];
+      return this.resolveTableReferences(randomRow[randomKey]);
+    },
+
     generateGod() {
       // Select God Type
       this.godType = this.godTypes[Math.floor(Math.random() * this.godTypes.length)];
@@ -102,6 +145,26 @@ export default {
         this.displayDomain2 = this.elements[Math.floor(Math.random() * this.elements.length)];
       } else {
         this.displayDomain2 = d2;
+      }
+
+      // Generate Physical Form and Additional Feature
+      const table254 = tables["2-54"];
+      let randomRow = table254[Math.floor(Math.random() * table254.length)];
+
+      let physicalFormText = randomRow["Physical Form"];
+      let additionalFeatureText = randomRow["Additional Feature"];
+
+      if (physicalFormText.includes("Roll again for a result on this table")) {
+          let newRandomRow;
+          do {
+              newRandomRow = table254[Math.floor(Math.random() * table254.length)];
+          } while (newRandomRow["Physical Form"].includes("Roll again for a result on this table"));
+
+          this.physicalForm = this.resolveTableReferences(newRandomRow["Physical Form"]) + ", but with wings";
+          this.additionalFeature = this.resolveTableReferences(additionalFeatureText);
+      } else {
+          this.physicalForm = this.resolveTableReferences(physicalFormText);
+          this.additionalFeature = this.resolveTableReferences(additionalFeatureText);
       }
 
       this.generated = true;
