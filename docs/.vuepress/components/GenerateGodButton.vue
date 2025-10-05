@@ -6,7 +6,7 @@
         The {{ godType }} of
         <a :href="domain1Link">{{ displayDomain1 }}</a> &amp;
         <a :href="domain2Link">{{ displayDomain2 }}</a>,
-        {{ question }}
+        {{ question }}. Blessing: Gain Luck when you adhere to their mandate at your own expense.
       </p>
     </div>
   </div>
