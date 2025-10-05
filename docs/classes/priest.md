@@ -24,3 +24,7 @@
 ---
 See also:
 - [The Gods & Divine Favor](../gods.md)
+---
+Notes:
+- Priest magic does not incur fatigue.
+- You can multiclass into priest by worshiping different gods.
