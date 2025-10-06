@@ -1,6 +1,6 @@
 # Player Classes
 
-Who are you? [Gain a class level](/rules.md#advancement) by spending XP, or you can spend it on achievements.
+Who are you? [Gain a class level](/rules.md#advancement) by spending 5x [new level] XP, or you can spend 5 XP for an achievements.
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
 
@@ -29,7 +29,7 @@ Who are you? [Gain a class level](/rules.md#advancement) by spending XP, or you 
 </div>
 
 <div style="text-align: center; margin: 20px; width: 40%;">
-  <a href="/classes/wizard.html">
+  <a href="/classes/wizard.md">
     <img src="/images/wizard.jpg" alt="A robed wizard with a long beard reading a book" style="width: 150px; height: auto;">
     <h3>Wizard</h3>
     <em>Reckless academics.</em>

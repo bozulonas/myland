@@ -132,4 +132,4 @@ Characters gain XP from the valuable treasures and boons they earn during an adv
 
 ### Advancement
 
-To gain a level of a class, spend your current level x 10 XP or unlock an [achievement](#achievements).
+To gain a level of a class, spend your new level] x 5 XP or 5 XP to unlock an [achievement](#achievements).
