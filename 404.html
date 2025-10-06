@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.24" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <meta name="license" content="CC BY 4.0"><title>Myland</title><meta name="description" content="Official house rules website for our TTRPG">
+    <link rel="preload" href="/myland/assets/style-C7NifL9n.css" as="style"><link rel="stylesheet" href="/myland/assets/style-C7NifL9n.css">
+    <link rel="modulepreload" href="/myland/assets/app-CDUVA_8-.js"><link rel="modulepreload" href="/myland/assets/404.html-J-zuy_PL.js">
+    <link rel="prefetch" href="/myland/assets/index.html-851ymG41.js" as="script"><link rel="prefetch" href="/myland/assets/Tables for myland.html-DXe6A5Zq.js" as="script"><link rel="prefetch" href="/myland/assets/classes.html-DQ1Irzsb.js" as="script"><link rel="prefetch" href="/myland/assets/gods.html-DGjgBdmI.js" as="script"><link rel="prefetch" href="/myland/assets/rules.html-AZC9V504.js" as="script"><link rel="prefetch" href="/myland/assets/fighter.html-CuR7gHpC.js" as="script"><link rel="prefetch" href="/myland/assets/priest.html-DfWuCnzS.js" as="script"><link rel="prefetch" href="/myland/assets/thief.html-DExf69m-.js" as="script"><link rel="prefetch" href="/myland/assets/wizard.html-C3NTLHk7.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-33d3430e><main class="page" data-v-33d3430e><div vp-content data-v-33d3430e><h1 data-v-33d3430e>404</h1><blockquote data-v-33d3430e>There&#39;s nothing here.</blockquote><a class="route-link" href="/myland/" data-v-33d3430e>Take me home</a></div></main></div><!--[--><!----><span data-v-f10a6358></span><!--]--><!--]--></div>
+    <script type="module" src="/myland/assets/app-CDUVA_8-.js" defer></script>
+  </body>
+</html>
