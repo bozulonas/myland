@@ -5,7 +5,7 @@ heroText: Myland
 tagline: Official house rules website for our TTRPG
 actions:
   - text: View Rules
-    link: /rules
+    link: /myland/rules
     type: primary
 footer: Licensed under CC BY 4.0 | Copyright © 2025
 ---
@@ -13,8 +13,8 @@ footer: Licensed under CC BY 4.0 | Copyright © 2025
 ## Welcome Adventurer!
 
 This site contains all the house rules for Myland, our TTRPG campaign. 
-- [Rules](/rules) page to get started.
-- [Classes](/classes) to find yourself.
+- [Rules](/myland/rules ) page to get started.
+- [Classes](/myland/classes) to find yourself.
 
 ---
 

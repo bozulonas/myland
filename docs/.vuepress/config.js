@@ -12,6 +12,7 @@ export default defineUserConfig({
       { text: 'Rules', link: '/rules' },
       { text: 'Classes', link: '/classes' },
       { text: 'Gods', link: '/gods' },
+      { text: 'Achievements', link: '/achievements.md' },
     ],
     // Enable sidebar on all pages
     sidebar: {
@@ -21,8 +22,7 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             { text: 'Attributes', link: '/rules#attributes' },
-            { text: 'Healing & Recovery', link: '/rules#healing-recovery' },
-            { text: 'Armor', link: '/rules#armor' },
+            { text: 'Saves', link: '/rules#saves' },
           ],
           class: 'custom-sidebar',
         },
@@ -42,6 +42,7 @@ export default defineUserConfig({
           children: [
             { text: 'Difficulty', link: '/rules#difficulty' },
             { text: 'Magic', link: '/rules#magic' },
+            { text: 'Time', link: '/rules#time' },
           ],
           class: 'custom-sidebar',
         },
@@ -51,11 +52,11 @@ export default defineUserConfig({
           children: [
             { text: 'Attacks', link: '/rules#attacks' },
             { text: 'Hit Protection and damage', link: '/rules#hit-protection-and-damage' },
-            { text: 'Scars', link: '/rules#scars' },
+            { text: 'Healing & Recovery', link: '/rules#healing-recovery' },
+            { text: 'Armor', link: '/rules#armor' },
             { text: 'Attribute score loss and death', link: '/rules#attribute-score-loss-and-death' },
             { text: 'Conditions', link: '/rules#conditions' },
             { text: 'Deprivation & Fatigue', link: '/rules#deprivation-fatigue' },
-            { text: 'Reactions', link: '/rules#reactions' },
             { text: 'Morale', link: '/rules#morale' },
           ],
           class: 'custom-sidebar',
@@ -81,6 +82,15 @@ export default defineUserConfig({
             { text: 'Wizard', link: '/classes/wizard.html' },
           ],
           class: 'custom-sidebar',
+        },
+      ],
+      '/achievements.md': [
+        {
+          text: 'Achievements',
+          collapsible: false,
+          children: [
+            { text: 'All Achievements', link: '/achievements.md' },
+          ],
         },
       ],
     },
