@@ -108,7 +108,7 @@ const handleMouseOver = async (e) => {
   if (!link || !popover) return
 
   // Ignore links in the sidebar (TOC)
-  if (link.closest('.custom-sidebar')) {
+  if (link.closest('.vp-sidebar')) { // searches up the DOM for the first element that has the class {xxx}, if it finds any, that means its in the TOC
     return
   }
   
