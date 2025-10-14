@@ -166,6 +166,11 @@ body, p, li, td, th {
   border-bottom: 1px solid var(--c-accent);
 }
 
+.sidebar .vp-sidebar-item.active {
+  color: var(--c-brand) !important;
+  border-left-color: var(--c-accent) !important;
+}
+
 /* Custom styles for link popovers */
 .link-popover {
   background: var(--c-bg-light);
