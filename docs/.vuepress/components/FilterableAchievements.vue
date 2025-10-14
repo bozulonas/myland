@@ -29,74 +29,32 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import { usePages } from '@vuepress/client';
 
-// --- Achievements Content ---
-const items = ref([
-  { 
-    id: 1, 
-    title: 'First Blood', 
-    description: 'Successfully land the killing blow on an enemy of CR 1 or higher.', 
-    unlocks: 'Talent: "Finishing Move"',
-    tags: ['Combat', 'General'] 
-  },
-  { 
-    id: 2, 
-    title: 'Dragon Slayer', 
-    description: 'Participate in the defeat of an adult dragon.', 
-    unlocks: 'Talent Tree: "Dragoon"',
-    tags: ['Combat', 'Epic'] 
-  },
-  { 
-    id: 3, 
-    title: 'Master of the Arcane', 
-    description: 'Successfully cast a spell of the 5th circle or higher.', 
-    unlocks: 'Talent: "Spell Weaving"',
-    tags: ['Magic', 'Wizard'] 
-  },
-  { 
-    id: 4, 
-    title: 'A Shadow in the Night', 
-    description: 'Successfully infiltrate a heavily guarded location without raising an alarm.', 
-    unlocks: 'Talent: "Silent Step"',
-    tags: ['Stealth', 'Thief'] 
-  },
-  { 
-    id: 5, 
-    title: 'Divine Intervention', 
-    description: 'Call upon your deity and have them directly intervene in a critical moment.', 
-    unlocks: 'Talent: "Favored of the Gods"',
-    tags: ['Divine', 'Priest'] 
-  },
-  { 
-    id: 6, 
-    title: 'Shield Wall', 
-    description: 'Use your shield to successfully block a potentially lethal blow against an ally.', 
-    unlocks: 'Talent: "Guardian Stance"',
-    tags: ['Combat', 'Fighter'] 
-  },
-  { 
-    id: 7, 
-    title: 'Loremaster', 
-    description: 'Discover a piece of forgotten lore that changes the course of a major quest.', 
-    unlocks: 'Talent: "Ancient Knowledge"',
-    tags: ['Exploration', 'General'] 
-  },
-  { 
-    id: 8, 
-    title: 'The Silver Tongue', 
-    description: 'Successfully persuade a hostile NPC to stand down through diplomacy alone.', 
-    unlocks: 'Talent: "Charming Demeanor"',
-    tags: ['Social', 'General'] 
-  },
-]);
-// --- End of Content ---
+const pages = usePages();
+
+// Dynamically generate the list of items from Markdown files in the achievements directory
+const items = computed(() => {
+  return pages.value
+    .filter(page => page.path.startsWith('/achievements/') && page.frontmatter.title)
+    .map(page => ({
+      id: page.key,
+      title: page.frontmatter.title,
+      description: page.frontmatter.description,
+      unlocks: page.frontmatter.unlocks,
+      tags: page.frontmatter.tags || [],
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically by title
+});
 
 const selectedTag = ref('All');
 
 const allTags = computed(() => {
   const tags = new Set();
   items.value.forEach(item => {
-    item.tags.forEach(tag => tags.add(tag));
+    if (item.tags) {
+      item.tags.forEach(tag => tags.add(tag));
+    }
   });
   return ['All', ...Array.from(tags).sort()];
 });
@@ -105,7 +63,7 @@ const filteredItems = computed(() => {
   if (selectedTag.value === 'All') {
     return items.value;
   }
-  return items.value.filter(item => item.tags.includes(selectedTag.value));
+  return items.value.filter(item => item.tags && item.tags.includes(selectedTag.value));
 });
 </script>
 
