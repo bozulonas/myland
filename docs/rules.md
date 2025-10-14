@@ -4,23 +4,22 @@
 
 ### Attributes
 
-Characters have three main attributes: **Strength (STR)**, **Dexterity (DEX)**, and **Willpower (WIL)**. To make a test, roll a d20. If the result is *less than or equal to* the relevant attribute, it's a success..Test of obsidian edits.
+Characters have three attributes: **Strength (STR)**, **Dexterity (DEX)**, and **Willpower (WIL)**. These are used to make [saves](#saves). 
 
-### Healing & Recovery
+### Saves
 
-A moment to catch your breath restores all lost **Hit Protection (HP)**. Recovering lost attribute points requires a full week of uninterrupted rest in a safe place.
+When attempting something risky, you might be asked to make a **save** against the threat of a consequence. Roll a d20 to represent the threat. If your attribute beats the threat (or matches it), you successfully avoid the consequence. (Put another way, if the threat rolls equal to or under your attribute, you successfully avoid the threat)
 
-### Armor
-
-Subtract your **Armor** value from any incoming damage. The maximum base Armor value is 3. Shields provide +1 Armor but require a free hand.
 
 ## Actions
 
-When making a test you can...
+When making a save you can...
 
 ### Leverage Time, Gear and Skill
 
-Describe how you use the available time, gear and/or a relevant skill. This sets the test's [difficulty](#difficulty). For example if you have a crowbar (gear), but are short on time and skill, a test to pry open a door may be hard. However if you have ample time, gear and skill the test may be trivial (no roll).
+Describe how you use the available time, gear and/or a relevant skill. This sets the save's [difficulty](#difficulty). If you have all three it's trivial (no roll needed), only two or one it's normal / hard. If you don't have any it's impossible. A skill is something from your character sheet / backstory.
+
+For example if you have a crowbar (gear), but are short on time and skill, a save to avoid a threat while prying open a door may be hard *(limited reward, severe consequences)*. However if you have ample time, gear and skill the save may be trivial *(no roll*).
 
 ### Raise the Stakes (aka Devils Bargain)
 
@@ -28,15 +27,15 @@ Describe how you adjust your approach to increase the reward, or gain advantage,
 
 ### Gambit
 
-Instead of an attack you may attempt repel, stop, [impair](#attacks), trip or other similar effect to a foe. Make a test to avoid a repercussion.
+Instead of an attack you may attempt repel, stop, [impair](#attacks), trip or other similar effect to a foe. Make a save to avoid a repercussion.
 
 ## Core Mechanics
 
 ### Difficulty
 
-A test can become easier or harder in two ways:
+A save can become easier or harder in two ways:
 
-*   **Risk and Reward**: What you stand to gain and lose from a test. As a task becomes easier the reward increases and the risk decreases. A PC can choose to raise the stakes, in which case increase both the risk and reward.
+*   **Risk and Reward**: What you stand to gain and lose from a save. As a task becomes easier the reward increases and the risk decreases. A PC can choose to raise the stakes, in which case increase both the risk and reward.
 *   **Advantage/Disadvantage**: Roll twice and take the best/worst result.
 
 ### Magic
@@ -45,6 +44,12 @@ A test can become easier or harder in two ways:
 - The way most adventurers cast magic is from using **spell books** they loot.
 - **Spell books** take one inventory slot, normally contain one spell and each casting adds fatigue to your inventory. It takes one dungeon turn to cast from one (cannot be done in combat).
 - Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap]().
+
+### Time
+Time is relative. It flies when you're having fun, and stops during a moment of mortal terror. As such, the tracking of time is suitably abstracted to match:
+- 10sec / a round: how long it takes each participant to take an action in combat 
+- 10min / a dungeon turn: how long it takes for an action during exploration. One roll on the dungeon clock.
+- 1hr: Has elapsesed whenever a 1 is rolled on the dungeon clock.
 
 ## Combat & Danger
 
@@ -58,7 +63,7 @@ Instead of an attack you can perform a risky gambit (like tripping or disarming 
 
 ### Hit Protection and damage
 
-Damage is dealt first to a creature's Hit Protection (HP). This represents the creature's ability to avoid or shrug off real damage. If they hit exactly 0 hp they take a [Scar](#scars). Once HP is depleted, damage is dealt to STR.
+Damage is dealt first to a creature's Hit Protection (HP). This represents the creature's ability to avoid or shrug off real damage. Once HP is depleted, damage is dealt to STR.
 
 After taking STR damage, the creature must make a STR save. If they succeed, they are still able to fight. If they fail, they take critical damage.
 
@@ -66,26 +71,13 @@ When a creature takes critical damage, they take an Injured Condition, and are i
 
 If an incapacitated creature is left untended for 1 hour, they die.
 
-### Scars
+### Healing & Recovery
 
-Take the die that caused the Scar and roll it on the table below for the resultant Scar. 
+A moment to catch your breath restores all lost **Hit Protection (HP)**. Recovering lost attribute points requires a full week of uninterrupted rest in a safe place.
 
-#### Scars Table
+### Armor
 
-| **HP Lost** | **Result** |
-|:---:|:---|
-| 1 | Lasting Scar: Roll 1d6. 1: Neck, 2: Hands, 3: Eye, 4: Chest, 5: Legs, 6: Ear. Roll 1d6. If the total is higher than your max HP, take the new result. |
-| 2 | Rattling Blow: You're disoriented and shaken. Describe how you refocus. Roll 1d6. If the total is higher than your max HP, take the new result. |
-| 3 | Walloped: You're sent flying and land flat on your face, winded. You are deprived until you rest for a few hours. Then, roll 1d6. Add that amount to your max HP. |
-| 4 | Broken Limb: Roll 1d6. 1-2: Leg, 3-4: Arm, 5: Rib, 6: Skull. Once mended, roll 2d6. If the total is higher than your max HP, take the new result. |
-| 5 | Diseased: You're afflicted with a gross, uncomfortable infection. When you get over it, roll 2d6. If the total is higher than your max HP, take the new result. |
-| 6 | Reorienting Head Wound: Roll 1d6. 1-2: STR, 3-4: DEX, 5-6: WIL. Roll 3d6. If the total is higher than your current attribute, take the new result. |
-| 7 | Hamstrung: You can barely move until you get serious help and rest. After recovery, roll 3d6. If the total is higher than your max DEX, take the new result. |
-| 8 | Deafened: You cannot hear anything until you find extraordinary aid. Regardless, make a WIL save. If you pass, increase your max WIL by 1d4. |
-| 9 | Re-brained: Some hidden part of your psyche is knocked loose. Roll 3d6. If the total is higher than your max WIL, take the new result. |
-| 10 | Sundered: An appendage is torn off, crippled, or useless. (The Warden will tell you which.) Then make a WIL save. If you pass, increase your max WIL by 1d6. |
-| 11 | Mortal Wound: You are deprived and out of action. You die in one hour unless healed. Upon recovery, roll 2d6. Take the new result as your max HP. |
-| 12 | Doomed: Death seemed ever so close, but somehow you survived. If your next save against critical damage is a fail, you die horribly. If you pass, roll 3d6. If the total is higher than your max HP, take the new result. |
+Subtract your **Armor** value from any incoming damage. The maximum base Armor value is 3. Shields provide +1 Armor but require a free hand.
 
 ### Attribute score loss and death
 
@@ -99,15 +91,11 @@ Conditions are negative effects. Each **Condition** must be placed in an invento
 
 Some Conditions have additional effects, which apply as long as the Condition remains in your inventory.
 
-Conditions can only be removed by meeting their clear requirement—usually a short, long or full rest.
+Conditions can only be removed by meeting their clear requirement—often a short, long or full rest.
 
 ### Deprivation & Fatigue
 
 Lacking essentials like food or rest makes a character **Deprived**. A Deprived character cannot recover HP or attribute points. For each day they remain Deprived, they gain the **Fatigued** condition.
-
-### Reactions
-
-When encountering a non-player character (NPC), the Referee rolls **2d6** to determine their initial disposition. A roll of **2** means they are immediately *hostile*, while a **12** indicates they are actively *helpful*.
 
 ### Morale
 
@@ -132,4 +120,16 @@ Characters gain XP from the valuable treasures and boons they earn during an adv
 
 ### Advancement
 
-To gain a level of a class, spend your new level] x 5 XP or 5 XP to unlock an [achievement](#achievements).
+Advancement means gaining class levels, unlocking achievements, or other permanent changes to your character.
+
+Advancement can always be achieved in the fiction, and does not cost XP.
+
+In addition, you can spend XP to gain a class level or unlock an achievement which is then retconned into the fiction *(including the fulfilment of all prerequisites*).
+
+XP costs:
+- Level of a class, spend [new level] x 5 XP
+- [Achievement](#achievements), spend 5 XP
+
+Notes:
+- You can can 4 class levels max
+- You can mix and match classes

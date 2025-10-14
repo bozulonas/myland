@@ -17,15 +17,16 @@
 
 **Memorization**: You can cast spells from memory rather than from books. Each memorized spell takes 1 inventory slot. When cast, you retroactively choose what spell it was, then replace it with fatigue. Casting a memorized spell can be done in combat.
 
-**Writing**: You can combine spellbooks, freeing up inventory slots.
 
 #### Level B: Study
 
-As the Level A **Study** ability.
+**Study** *(as per level A)*.
+
+**Penmanship**: You can combine spellbooks, freeing up inventory slots.
 
 #### Level C: Study
 
-As the Level A **Study** ability.
+**Study** *(as per level A)*.
 
 #### Level D: Ritualist
 
