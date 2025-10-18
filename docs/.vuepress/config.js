@@ -1,10 +1,14 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
+import { usePagesPlugin } from 'vuepress-plugin-use-pages'
 
 export default defineUserConfig({
-  base: '/myland/',
+  
   bundler: viteBundler(),
+  plugins: [
+    usePagesPlugin(),
+  ],
   theme: defaultTheme({
     // Navigation
     navbar: [
@@ -12,7 +16,7 @@ export default defineUserConfig({
       { text: 'Rules', link: '/rules' },
       { text: 'Classes', link: '/classes' },
       { text: 'Gods', link: '/gods' },
-      { text: 'Achievements', link: '/achievements.md' },
+      { text: 'Achievements', link: '/achievements.html' },
     ],
     // Enable sidebar on all pages
     sidebar: {
@@ -84,15 +88,7 @@ export default defineUserConfig({
           class: 'custom-sidebar',
         },
       ],
-      '/achievements.md': [
-        {
-          text: 'Achievements',
-          collapsible: false,
-          children: [
-            { text: 'All Achievements', link: '/achievements.md' },
-          ],
-        },
-      ],
+
     },
   }),
   

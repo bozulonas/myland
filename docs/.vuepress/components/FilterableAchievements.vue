@@ -29,12 +29,16 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { usePages } from '@vuepress/client';
+import { usePages } from '@temp/pages';
 
 const pages = usePages();
+console.log(pages.value);
 
 // Dynamically generate the list of items from Markdown files in the achievements directory
 const items = computed(() => {
+  if (!pages.value) {
+    return [];
+  }
   return pages.value
     .filter(page => page.path.startsWith('/achievements/') && page.frontmatter.title)
     .map(page => ({

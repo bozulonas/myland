@@ -157,25 +157,28 @@ const handleMouseOut = (e) => {
 }
 
 onMounted(() => {
-  // Don't initialize on mobile devices
-  if (window.innerWidth <= 768) {
-    return
+  if (typeof window !== 'undefined') {
+    // Don't initialize on mobile devices
+    if (window.innerWidth <= 768) {
+      return
+    }
+    createPopover()
+    document.addEventListener('mouseover', handleMouseOver)
+    document.addEventListener('mouseout', handleMouseOut)
   }
-  createPopover()
-  document.addEventListener('mouseover', handleMouseOver)
-  document.addEventListener('mouseout', handleMouseOut)
 })
 
 onUnmounted(() => {
-  // Don't try to remove listeners if they were never added
-  if (window.innerWidth <= 768) {
-    return
-  }
-  document.removeEventListener('mouseover', handleMouseOver)
-  document.removeEventListener('mouseout', handleMouseOut)
-  if (popover && popover.parentNode) {
-    popover.parentNode.removeChild(popover)
-  }
+  if (typeof window !== 'undefined') {
+    // Don't try to remove listeners if they were never added
+    if (window.innerWidth <= 768) {
+      return
+    }
+    document.removeEventListener('mouseover', handleMouseOver)
+    document.removeEventListener('mouseout', handleMouseOut)
+    if (popover) {
+          popover.remove()
+        }  }
 })
 </script>
 
