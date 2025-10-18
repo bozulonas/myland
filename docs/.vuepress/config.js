@@ -17,6 +17,7 @@ export default defineUserConfig({
       { text: 'Classes', link: '/classes' },
       { text: 'Gods', link: '/gods' },
       { text: 'Achievements', link: '/achievements.html' },
+      { text: 'Marketplace', link: '/marketplace.html' },
     ],
     // Enable sidebar on all pages
     sidebar: {
