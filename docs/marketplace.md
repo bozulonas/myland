@@ -8,7 +8,7 @@ title: Marketplace
 
 <script setup>
 import { ref } from 'vue';
-import { categories as marketplaceCategories } from './.vuepress/marketplaceData.js';
+import { categories as marketplaceCategories } from '@/marketplaceData.js';
 
 const categories = ref(marketplaceCategories);
 </script>
