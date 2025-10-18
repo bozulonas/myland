@@ -347,3 +347,11 @@ html.dark thead {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(139, 46, 31, 0.4);
 }
+
+/* Marketplace Accordion Table Style */
+.accordion-content table {
+  width: 100%;
+  border: 2px solid var(--c-border-dark);
+  background: var(--c-bg-light);
+  margin-top: 10px;
+}
