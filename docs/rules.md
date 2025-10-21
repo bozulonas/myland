@@ -120,16 +120,18 @@ Characters gain XP from the valuable treasures and boons they earn during an adv
 
 ### Advancement
 
-Advancement means gaining class levels, unlocking achievements, or other permanent changes to your character.
-
-Advancement can always be achieved in the fiction, and does not cost XP.
-
-In addition, you can spend XP to gain a class level or unlock an achievement which is then retconned into the fiction *(including the fulfilment of all prerequisites*).
-
-XP costs:
-- Level of a class, spend [new level] x 5 XP
-- [Achievement](#achievements), spend 5 XP
+#### Class Levles
+- XP Cost: [new level] x 5 XP
+- Attribute increase: roll d20 once for each of your mouse’s STR, DEX and WIL. If a result is higher than the attribute’s current value, increase it by one. 
+- Hit Protection Increase: Roll your class's hit points die and add it to your maximum HP
+- Talent: Gain any talents listed on your class.
 
 Notes:
 - You can can 4 class levels max
 - You can mix and match classes
+
+#### Achievements
+Achievements can always be achieved in the fiction, and does not cost XP, or can be purcahsed for 5 XP. 
+
+When XP to gain a class level or unlock an achievement the fullfillment of any prequisites is retconned into the fiction.
+

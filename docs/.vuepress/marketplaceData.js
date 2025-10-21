@@ -98,7 +98,7 @@ export const categories = [
   <thead>
     <tr>
       <th>Hireling</th>
-      <th>GP</th>
+      <th>Daily Rate, GP</th>
     </tr>
   </thead>
   <tbody>

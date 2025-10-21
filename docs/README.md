@@ -1,25 +1,27 @@
 ---
 home: true
 title: Home
+heroImage: /images/fighter.jpg
 heroText: Myland
-tagline: Official house rules website for our TTRPG
-actions:
-  - text: View Rules
+tagline: A world of adventure awaits. Explore the official house rules for our TTRPG campaign.
+features:
+  - title: Delve into the Rules
+    details: Understand the core mechanics, from character creation to combat and magic. A solid foundation for every adventurer.
     link: /rules
-    type: primary
+  - title: Choose Your Path
+    details: Discover the unique classes you can embody. Will you be a valiant Fighter, a devout Priest, a cunning Thief, or a wise Wizard?
+    link: /classes
+  - title: Discover the Pantheon
+    details: Learn about the gods of Myland, their domains, and the miracles they grant to their faithful.
+    link: /gods
+  - title: The Marketplace
+    details: Browse the equipment, hirelings, and services available to aid you on your quests.
+    link: /marketplace
+  - title: Achievements
+    details: Prove your mettle and earn recognition for your heroic deeds.
+    link: /achievements
+  - title: The World of Myland
+    details: Learn more about the world, its history, and the people you will meet.
+    link: /rules
 footer: Licensed under CC BY 4.0 | Copyright © 2025
 ---
-
-## Welcome Adventurer!
-
-This site contains all the house rules for Myland, our TTRPG campaign. 
-- [Rules](/rules ) page to get started.
-- [Classes](/classes) to find yourself.
-
----
-
-## License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-
-You are free to share and adapt this material for any purpose, even commercially, as long as you give appropriate credit.

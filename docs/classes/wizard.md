@@ -5,7 +5,7 @@
 *Reckless academics.*
 
 ### Prerequisites
-
+*(reminder: these are retconned if spending XP. See [Advancement](/rules.md#advancement))*
 *   1d4 years of study at an institute or apprenticed to a master.
 *   Take on student loans: 5g per wizard level per adventure. If you fail to pay, the bursar will come for you.
 
@@ -22,7 +22,7 @@
 
 **Study** *(as per level A)*.
 
-**Penmanship**: You can combine spellbooks, freeing up inventory slots.
+**Penmanship**: Each downtime, you can combine two spellbooks, freeing up inventory slots.
 
 #### Level C: Study
 
