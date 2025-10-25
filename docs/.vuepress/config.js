@@ -110,6 +110,33 @@ export default defineUserConfig({
         },
       ],
 
+      '/classes.html': [
+        {
+          text: 'Classes',
+          collapsible: true,
+          children: [
+            { text: 'Alchemist', link: '/classes.html#alchemist' },
+            { text: 'Always Prepared', link: '/classes.html#always-prepared' },
+            { text: 'Assassin', link: '/classes.html#assassin' },
+            { text: 'Bard', link: '/classes.html#bard' },
+            { text: 'Beastmaster', link: '/classes.html#beastmaster' },
+            { text: 'Berserker', link: '/classes.html#berserker' },
+            { text: 'Brawler', link: '/classes.html#brawler' },
+            { text: 'Commander', link: '/classes.html#commander' },
+            { text: 'Duellist', link: '/classes.html#duellist' },
+            { text: 'Healer', link: '/classes.html#healer' },
+            { text: 'Ironclad', link: '/classes.html#ironclad' },
+            { text: 'Priest', link: '/classes.html#priest' },
+            { text: 'Sharpshooter', link: '/classes.html#sharpshooter' },
+            { text: 'Skilled', link: '/classes.html#skilled' },
+            { text: 'Swashbuckler', link: '/classes.html#swashbuckler' },
+            { text: 'Tactician', link: '/classes.html#tactician' },
+            { text: 'Warrior', link: '/classes.html#warrior' },
+            { text: 'Wizard', link: '/classes.html#wizard' },
+          ]
+        }
+      ],
+
       '/spell-invention/': [
         {
           text: 'Spell Invention',
