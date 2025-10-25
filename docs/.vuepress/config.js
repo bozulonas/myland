@@ -27,6 +27,7 @@ export default defineUserConfig({
       { text: 'Gods', link: '/gods' },
       { text: 'Achievements', link: '/achievements.html' },
       { text: 'Marketplace', link: '/marketplace.html' },
+      { text: 'Spell Invention', link: '/spell-invention.html' },
     ],
     // Enable sidebar on all pages
     sidebar: {
@@ -55,8 +56,18 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             { text: 'Difficulty', link: '/rules#difficulty' },
-            { text: 'Magic', link: '/rules#magic' },
             { text: 'Time', link: '/rules#time' },
+          ],
+          class: 'custom-sidebar',
+        },
+        {
+          text: 'Magic',
+          collapsible: true,
+          children: [
+            { text: 'Vancian Magic', link: '/rules#vancian-magic' },
+            { text: 'Spellburn', link: '/rules#spellburn' },
+            { text: 'Spelling Error', link: '/rules#spelling-error' },
+            { text: 'Spell Invention', link: '/rules#spell-invention' },
           ],
           class: 'custom-sidebar',
         },
@@ -99,6 +110,13 @@ export default defineUserConfig({
         },
       ],
 
+      '/spell-invention/': [
+        {
+          text: 'Spell Invention',
+          collapsible: true,
+          children: [],
+        },
+      ],
     },
   }),
   

@@ -25,7 +25,7 @@ For example if you have a crowbar (gear), but are short on time and skill, a sav
 
 Describe how you adjust your approach to increase the reward, or gain advantage, at the expense of greater risk.
 
-### Gambit
+### Manuever
 
 Instead of an attack you may attempt repel, stop, [impair](#attacks), trip or other similar effect to a foe. Make a save to avoid a repercussion.
 
@@ -38,18 +38,78 @@ A save can become easier or harder in two ways:
 *   **Risk and Reward**: What you stand to gain and lose from a save. As a task becomes easier the reward increases and the risk decreases. A PC can choose to raise the stakes, in which case increase both the risk and reward.
 *   **Advantage/Disadvantage**: Roll twice and take the best/worst result.
 
-### Magic
-
-- To cast magic, invest a number of _Mana Dice_ (d6) of your choice, up to the number you have access to. Spells will refer number of [dice] and the [sum]. 
-- The way most adventurers cast magic is from using **spell books** they loot.
-- **Spell books** take one inventory slot, normally contain one spell and each casting adds fatigue to your inventory. It takes one dungeon turn to cast from one (cannot be done in combat).
-- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap]().
-
 ### Time
 Time is relative. It flies when you're having fun, and stops during a moment of mortal terror. As such, the tracking of time is suitably abstracted to match:
 - 10sec / a round: how long it takes each participant to take an action in combat 
 - 10min / a dungeon turn: how long it takes for an action during exploration. One roll on the dungeon clock.
 - 1hr: Has elapsesed whenever a 1 is rolled on the dungeon clock.
+
+## Magic
+#### Vancian Magic
+
+- Anyone cast magic by reading spells from *spell books** (or **scrolls**).
+- To cast magic, invest a number of _Mana Dice_ (d6) of your choice, up to the number you have access to. Spells will refer number of [dice] and the [sum] of the roll to determine the effect. 
+- **Spell books** take one inventory slot, start with one spell revealed and each casting adds fatigue to your inventory. It takes 10min of gesticulation and incantation to cast (1 roll of the dungeon clock) and cannot be done in combat. More spells can be unlocked by [studying](/classes/wizard.html).
+- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap]().
+
+#### Spellburn
+
+- Those skilled in the art can pay for magic through mental strain (WIL), or their own flesh (STR).
+- When casting a spell with spellburn determine with the GM the cost based on this:
+
+| Cost | Power                                                | Targets | Duration | Distance                                     |
+| ---- | ---------------------------------------------------- | ------- | -------- | -------------------------------------------- |
+| 0    | d6 or equivalent effect                              | One     | Instant  | Close                                        |
+| +1   | a Magic die is upgraded to d8, or equivalent effect  | a Few   | A minute | Within sight                                 |
+| +2   | a Magic die is upgraded to d10, or equivalent effect | Many    | An hour  | Anywhere (requires lock of hair, or similar) |
+
+- If the desired effect is a close semantic match for the spells name, it gets a -1 discount.
+- After casting a spell with spellburn, make a WIL save to avoid a [spelling error](#spelling-error)
+
+##### Spelling Error
+- The spell’s effect is determined by changing a few letters of the spell. The PCs suggest alternatives of the spell, changing a few letters from the original spelling. The GM picks from the alternatives suggested and describes how this magic effect is realized in the situation.
+
+#### Spell Invention
+- Wizard's can choose to invent insted of studying existing spells. See [Spell invention](/spell-invention.html)
+- Invented spells can do whatever the name implies, but are limited without spellburn [spellburn](#spellburn). They start only dealing d6 damage (or equivalent effect), have a range of touch, an momentary duration, and affecting at most one target.
+
+#### Alchemy
+
+- Can be learned by harvesting and ingesting thirteen potent psychoactive ingredients while taking meticulous notes on their effects. Or by taking a class level in [Alchemist](/classes.html#classes##alechemist).
+- You can combine ingredients into alchemicals (potions, oils, powder, fumes). You gain **alchemists equipment** (1 inventory slot) 
+- Steps:
+  - **Harvest Ingredients**: Collect plant and animal samples, noting its name and expected effect in your notebook like "eye of newt - vision", or "cloying fog - mist". These samples take 1 inventory slot, and take 10min to harvest.
+  - **Combine** two samples using your **alchemists equipment** combining their effects (like "vision & mist") and choose the form (potions, oil, powder or fumes). It takes 10min to produce. Make a DEX save to avoid one of the effects being replaced with a rhyming substitute e.g. "vision mist" becoming "vision cyst" (your character doesn't know). Produces 3 uses.
+  - **Use** it, each use consuming one of the 3 uses and its effect based on the samples used. If consumed it may be treated as an [addicitive substance](link to addictive subnstances section)
+
+##### Addicitive Substances
+
+Addictive substances last an 1 hour, afterwhich (so typically when a 1 is rolled on the dungeon clock) make a WIL save to resist gaining the **addicted condition** (1 inventory slot).
+
+**Addicted Condition**: You are deprived (cannot regain HP) unless you are on something. Multiple instances of addiction stack (don't consume additional inventory slots). Clear: Get a good night's sleep. Roll for Withdrawals Symptoms.
+
+###### Withdrawal Symptoms
+Roll [addiction]d6
+
+|Roll|Symptom|
+|---|---|
+|1|Uncontrolled Growth: Your hair and nails grow at a startling rate of an inch per hour. It’s a constant, distracting, and unpleasant maintenance issue.|
+|2|The Digging Urge: You are filled with an intense, gnawing urge to dig. You must save or spend hours clawing at the earth. While strangely restful, it's a compulsive, mad behaviour that overrides all else.|
+|3|Proper Noun Aphasia: You lose the ability to speak proper nouns (names of people, places, specific things). When you try, only an animalistic growl emerges, making communication a frustrating exercise in circumlocution.|
+|4|Water Phobia: Not _your_ phobia, but water's phobia of _you_. Water refuses to come within arm’s reach, making rain avoid you in a perfect circle but rendering drinking and hygiene a significant, frustrating challenge.|
+|5|Susurrus of Objects: You constantly hear a low whisper of voices from every object around you. Using an object makes its voice louder—lighting a match causes it to scream a death knell. You can only concentrate by plugging your ears with your hands.|
+|6|Acute Phobia: You develop a sudden, severe, and irrational phobia of a common item or creature that was present when you last took the substance (e.g., steel, dogs, fire, closed doors). When confronted with it, you must save or become panicked.|
+|7|Malignant Lie: The next lie you tell becomes true in the most twisted and harmful way possible. A simple bluff to a guard that "we're expected by the captain" might result in the captain appearing, furious that you're late for your own execution.|
+|8|Waxen Body: Your body takes on the consistency of soft, warm candle wax. While you can reshape yourself with effort, heat causes you to slowly melt and cold makes you stiff and brittle. Taking a serious injury could cause a limb to just fall off.|
+|9|Unjointed Limbs: Your arms and legs double in length, each growing an extra, awkward joint. Your movements become strange and spider-like, making fine manipulation difficult and marking you as an unsettling presence.|
+|10|Withered Limb: One of your limbs suddenly withers and cramps into a useless, gnarled claw. It is dead to you, and any attempt by another to magically heal it causes the withering curse to spread to them instead. (none of the characters know this)|
+|11|Obsessive Stalker: The next stranger you meet must save or become obsessed with you. This obsession twists into a need to murder you and keep a grisly trophy of your body. If they succeed, they are cured. If they fail or are killed, the curse leaps to the _next_ stranger you meet.|
+|12|Primal Fear: You are seized by a pure, animal terror so profound you can only scream and run. You will flee until dawn, responding with violence to anyone who tries to stop you. If you are killed in this state, you rise as a banshee.|
+|13|Soul in a Flame: Your soul is violently shunted into the nearest flame (a torch, a candle, a campfire). As long as that flame burns, you cannot be killed by normal means—damage that would kill you is transferred to the flame, causing it to shrink. If the flame is extinguished, your soul is snuffed out, and you die instantly. You now have a desperate need to protect your new, fragile phylactery.|
+|14|Ashen Touch: The touch of another human, even a soft caress from a loved one, becomes lethal.Their skin on yours causes your flesh to wither and instantly flake away into grey ash.|
+|15|Fugitive Hands: Your hands fall from your wrists and skitter away into the darkness. In seven days, they will return. Bloated to the size of wolves and driven by a hateful intelligence, their only goal is to hunt you down and kill you.|
+|16|The Uncanny Replacement: You are replaced by something that looks and acts like you, but is fundamentally _wrong_. Everyone, including you, knows it. You can't trust your own reflection, your own thoughts. You are now a stranger to the world and, most horrifyingly, to yourself.|
+|17|Post-Mortem Realization: You have a sudden, clarifying moment of horror: you already died, long before this started. The corpse you've been piloting has finally reached its expiration date, and the rot is setting in. You must save each day or your body will crumble to dust, releasing your mind as a mad, tormented wraith.|
 
 ## Combat & Danger
 
