@@ -47,10 +47,11 @@ Time is relative. It flies when you're having fun, and stops during a moment of 
 ## Magic
 ### Vancian Magic
 
-- Anyone cast magic by reading spells from *spell books** (or **scrolls**).
-- To cast magic, invest a number of _Mana Dice_ (d6) of your choice, up to the number you have access to. Spells will refer number of [dice] and the [sum] of the roll to determine the effect. 
-- **Spell books** take one inventory slot, start with one spell revealed and each casting adds one fatigue to your inventory. It takes 10min of gesticulation and incantation to cast (1 roll of the dungeon clock) and cannot be done in combat. More spells can be unlocked from the spellbook by [studying](/classes/wizard.html) it.
-- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap](#mishaps).
+- Anyone can cast spells from spell books or scrolls.
+- To cast a spell, add a fatigue (1 inventory slot) and invest a number of _d6 Mana Dice_ (MD) of your choice, up to the number you have access to.
+- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap](#mishaps). Spells will refer number of [dice] and the [sum] of the roll to determine the effect. 
+- **Spell books** take one inventory slot, start with one spell revealed. It takes 10min of gesticulation and incantation to cast (1 roll of the dungeon clock) and cannot be done in combat. More spells can be unlocked from the spellbook by [studying](/classes/wizard.html) it. Spell books are considered dangerous to display openly.
+- Scrolls contain a single spell and a destroyed when used. The spell they're in can be copied to a spell book taking 20 gold in one day. Save to avoid a [spelling error](#spelling-error)
 
 #### Spellburn
 
