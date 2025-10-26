@@ -116,7 +116,7 @@ This section details all available divine domains for the Priest class. Each dom
 **Miracles:**
 
 **Mend**
-*Range*: touch; *Target*: broken object or wounded creature; *Duration*: instant. Repair a broken mundane item or heal a wound of **[sum]** HP or less.
+*Range*: touch; *Target*: broken object or wounded creature; *Duration*: instant. Repair a broken mundane item or heal a wound of **[sum]** STR or less.
 
 **Transmute**
 *Range*: touch; *Target*: **[sum]** inches^3 of material; *Duration*: instant. Targeted material becomes another material of your choice. Restrictions lessen with more **[dice]** invested.

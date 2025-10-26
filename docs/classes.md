@@ -5,7 +5,7 @@ Who are you? [Gain a class level](/rules.md#advancement) by spending 5x [new lev
 Choose one each time you gain a level. You can take the same class more than once.
 
 ## Alchemist
-You learn [Alchemy](link to alchemy section in rules)
+You learn [Alchemy](/rules.html#alchemy)
 - Gain d6 hp.
 
 <img src="/images/thief.jpg" alt="A thief in the shadows" style="width: 150px; height: auto;">
@@ -14,7 +14,7 @@ You learn [Alchemy](link to alchemy section in rules)
 You can purchase **Unlabelled Packages** which, when unwrapped, contain anything you declare. The item has to cost less than what you spent on the package, fit in the right number of inventory slots, and be something that is feasibly purchasable.  
 - Gain d6 hp.
 
-## ASSASSIN
+## Assassin
 Your Enhanced attacks against unaware, disarmed, or Restrained opponents bypass HP.
 - Gain d6 hp.
 
@@ -25,38 +25,38 @@ Your Enhanced attacks against unaware, disarmed, or Restrained opponents bypass 
 - Gain d6 hp.
 Zealots? / Recruiter ability under Bars? TODO
 
-## BEASTMASTER
+## Beastmaster
 You can control one additional Pet. Your Pets act as a single pack following your command. When your pet must make a WIL Save, you may do it instead.
 Gain d6 hp.
 
-## BERSERKER
+## Berserker
 After taking Damage in combat, Raise your melee Damage dice and gain Advantage on the next Save against Critical Damage till the end of the next turn.
 Gain d8 hp.
 
-## BRAWLER
+## Brawler
 While not wearing any armour, your Armour score is +1. Gain bonus d4 unarmed Damage die (increasing in size each time you take this)
 Gain d8 hp.
 
-## COMMANDER
+## Commander
 Once per combat, issue a command to one ally to Enhance their attack this turn or to restore d6hp to them. The command does not count as your action.
 Gain d6 hp.
 
-## DUELLIST
+## Duellist
 - Once per combat, until it ends, you can concentrate on fighting a single adjacent opponent, Enhancing your melee attacks against them and Impairing their melee attacks against anyone but you. All other enemies’ attacks against you are Enhanced.
 - Gain d8 hp.
 
-## HEALER 
+## Healer 
 Gain 5 gp worth of healing supplies. While resting, spend 5 gp worth of healing supplies to restore d6 Ability Score Loss to an ally or yourself, or remove a condition. Healing supplies are available for purchase in most settlements and can be used by Healers only.
 Gain d6 hp.
 
-## IRONCLAD
+## Ironclad
 Full Armour does not impose its Disadvantages on you and you can employ the shield while wearing it.
 Gain d8 hp.
 
 <img src="/images/priests.jpg" alt="Five priests in ceremonial robes" style="width: 150px; height: auto;">
 
 ## Priest of X
-* **Worship**: Perform a significant **[appeasement](link to appeasement rules)** to **X** to gain their **blessing** and an **[invocation](link to invocation magic section)** of their choosing
+* **Worship**: Perform a significant **[appeasement](/rules.html#appeasement)** to **X** to gain their **blessing** and an **[invocation](/rules.html#invocation)** of their choosing
 	* *X is a god or suitable supernatural being*
 	* *Their blessing is a minor ability*
 	* *You can request a specific invocation, but it will require a stipulation be met.*
@@ -64,11 +64,11 @@ Gain d8 hp.
 - [The Gods & Divine Favor](/gods.md).
 - Gain d6 hp.
 
-## SHARPSHOOTER
+## Sharpshooter
 After a ranged attack, gain bonus weapon Damage die with this weapon on the same target until you attack another target or the combat ends.
 Gain d6 hp.
 
-## SKILLED
+## Skilled
 Saves related to two fields
 of Expertise become easier (great rewward, less risk and/or gain advantage): animal handling, athletics, burgling,
 cheating, drinking, quickness, stealth, navigation,
@@ -76,11 +76,11 @@ negotiation, tracking, etc. While you are not under
 pressure, you do not need to make such Save at all.
 Gain d6 hp.
 
-## SWASHBUCKLER
+## Swashbuckler
 While attacking, you can hit a second target, rolling your weapon Damage dice.
 Gain d8 hp.
 
-## TACTICIAN
+## Tactician
 - When performing an attack, you may add a Manoeuvre to it (push, trip, disarm, grapple for their next turn, etc.) The attack is carried out as usual, and the
 opponent must make a Save to avoid an additional effect described by you.
 - Gain d8 hp.
@@ -88,7 +88,7 @@ opponent must make a Save to avoid an additional effect described by you.
 
 <img src="/images/fighter.jpg" alt="A stoic warrior in full plate armor" style="width: 150px; height: auto;">
 
-## WARRIOR
+## Warrior
 - Gain a feat from the list below.
 - Gain a d8 hp.
 
@@ -113,8 +113,8 @@ Activating a feat in combat incurs 1 fatigue unless its description says otherwi
 
 <img src="/images/wizard.jpg" alt="A robed wizard with a long beard reading a book" style="width: 150px; height: auto;">
 
-## Wizard: 
+## Wizard 
 - **Study**: Gain the knowledge within a [spellbook](https://saltygoo.github.io/class/wizard) *(a minor ability)* and either A) reveal two of its spells at random, or B) [invent two new spells](/rules###Magic####SpellInvention).
-	- See [Vancian Magic](link to vancian magic rules)
-- You know how to wield [Spellburn](link to Spellburn secrion) to augment you spells.
+	- See [Vancian Magic](/rules.html#vancian-magic)
+- You know how to wield [Spellburn](/rules.html#spellburn) to augment you spells.
 - Gain d4 hp.

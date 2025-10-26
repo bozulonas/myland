@@ -57,11 +57,11 @@ Time is relative. It flies when you're having fun, and stops during a moment of 
 - Those skilled in the art can pay for magic through mental strain (WIL), or their own flesh (STR).
 - When casting a spell with spellburn determine with the GM the cost based on this:
 
-| Cost | Power                                                | Targets | Duration | Distance                                     | Semantics                        |
-| ---- | ---------------------------------------------------- | ------- | -------- | -------------------------------------------- | -------------------------------- |
-| 0    | d6 or equivalent effect                              | One     | Instant  | Touch                                        | Adheres to spell's touchstones   |
-| +1   | a Magic die is upgraded to d8, or equivalent effect  | a Few   | A minute | Within sight                                 | Stretches plausibility           |
-| +2   | a Magic die is upgraded to d10, or equivalent effect | Many    | An hour  | Anywhere (requires lock of hair, or similar) | Severely stretches plausibility  |
+| Cost | Targets | Duration | Distance                                     | Semantics                        |
+| ---- | ------- | -------- | -------------------------------------------- | -------------------------------- |
+| 0    | One     | Instant  | Touch                                        | Adheres to spell's touchstones   |
+| +1   | a Few   | A minute | Within sight                                 | Stretches plausibility           |
+| +2   | Many    | An hour  | Anywhere (requires lock of hair, or similar) | Severely stretches plausibility  |
 
 - After casting a spell with spellburn, make a WIL save to avoid a [spelling error](#spelling-error)
 
@@ -106,13 +106,13 @@ Is performed by taking a level in priest, involves making a major appeasement to
   - **Combine** two samples using your **alchemists equipment** combining their effects (like "vision & mist") and choose the form (potions, oil, powder or fumes). It takes 10min to produce. Make a DEX save to avoid one of the effects being replaced with a rhyming substitute e.g. "vision mist" becoming "vision cyst" (your character doesn't know). Produces 3 uses.
   - **Use** it, each use consuming one of the 3 uses and its effect based on the samples used. If consumed it may be treated as an [addicitive substance](link to addictive subnstances section)
 
-##### Addicitive Substances
+#### Addicitive Substances
 
 Addictive substances last an 1 hour, afterwhich (so typically when a 1 is rolled on the dungeon clock) make a WIL save to resist gaining the **addicted condition** (1 inventory slot).
 
 **Addicted Condition**: You are deprived (cannot regain HP) unless you are on something. Multiple instances of addiction stack (don't consume additional inventory slots). Clear: Get a good night's sleep. Roll for Withdrawals Symptoms.
 
-###### Withdrawal Symptoms
+##### Withdrawal Symptoms
 Roll [addiction]d6
 
 |Roll|Symptom|
@@ -204,7 +204,7 @@ Characters gain XP from the valuable treasures and boons they earn during an adv
 
 ### Advancement
 
-#### Class Levles
+#### Class Levels
 - XP Cost: [new level] x 5 XP
 - Attribute increase: roll d20 once for each of your mouse’s STR, DEX and WIL. If a result is higher than the attribute’s current value, increase it by one. 
 - Hit Protection Increase: Roll your class's hit points die and add it to your maximum HP

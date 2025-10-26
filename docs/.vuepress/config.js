@@ -144,6 +144,37 @@ export default defineUserConfig({
           children: [],
         },
       ],
+      '/gods': [
+        {
+          text: 'Gods',
+          collapsible: true,
+          children: [
+            { text: 'Pantheon', link: '/gods.html#pantheon' },
+            { text: 'Hubris Table', link: '/gods.html#hubris-table' },
+            { text: 'Divine Domains Reference', link: '/gods.html#divine-domains-reference' },
+            { text: 'Animal Domain', link: '/gods.html#animal-domain' },
+            { text: 'Authority Domain', link: '/gods.html#authority-domain' },
+            { text: 'Battle Domain', link: '/gods.html#battle-domain' },
+            { text: 'Blood Domain', link: '/gods.html#blood-domain' },
+            { text: 'Creation Domain', link: '/gods.html#creation-domain' },
+            { text: 'Death Domain', link: '/gods.html#death-domain' },
+            { text: 'Element Domain', link: '/gods.html#element-domain' },
+            { text: 'Fate Domain', link: '/gods.html#fate-domain' },
+            { text: 'Forge Domain', link: '/gods.html#forge-domain' },
+            { text: 'Greed Domain', link: '/gods.html#greed-domain' },
+            { text: 'Harvest Domain', link: '/gods.html#harvest-domain' },
+            { text: 'Knowledge Domain', link: '/gods.html#knowledge-domain' },
+            { text: 'Love Domain', link: '/gods.html#love-domain' },
+            { text: 'Nobility Domain', link: '/gods.html#nobility-domain' },
+            { text: 'Purity Domain', link: '/gods.html#purity-domain' },
+            { text: 'Storm Domain', link: '/gods.html#storm-domain' },
+            { text: 'Trickery Domain', link: '/gods.html#trickery-domain' },
+            { text: 'Undeath Domain', link: '/gods.html#undeath-domain' },
+            { text: 'Vengeance Domain', link: '/gods.html#vengeance-domain' },
+            { text: 'Wilds Domain', link: '/gods.html#wilds-domain' },
+          ]
+        }
+      ],
     },
   }),
   
