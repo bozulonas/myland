@@ -23,6 +23,7 @@ Your Enhanced attacks against unaware, disarmed, or Restrained opponents bypass 
 - Gain +1 to reaction rolls (the rolls the GM makes in the dungeon to decide if something want to kill you or not)
 - You can talk your way into bed with any NPC, WIL save to avoid consequences.
 - Gain d6 hp.
+Zealots? / Recruiter ability under Bars? TODO
 
 ## BEASTMASTER
 You can control one additional Pet. Your Pets act as a single pack following your command. When your pet must make a WIL Save, you may do it instead.
@@ -41,8 +42,8 @@ Once per combat, issue a command to one ally to Enhance their attack this turn o
 Gain d6 hp.
 
 ## DUELLIST
-Once per combat, until it ends, you can concentrate on fighting a single adjacent opponent, Enhancing your melee attacks against them and Impairing their melee attacks against anyone but you. All other enemies’ attacks against you are Enhanced.
-Gain d8 hp.
+- Once per combat, until it ends, you can concentrate on fighting a single adjacent opponent, Enhancing your melee attacks against them and Impairing their melee attacks against anyone but you. All other enemies’ attacks against you are Enhanced.
+- Gain d8 hp.
 
 ## HEALER 
 Gain 5 gp worth of healing supplies. While resting, spend 5 gp worth of healing supplies to restore d6 Ability Score Loss to an ally or yourself, or remove a condition. Healing supplies are available for purchase in most settlements and can be used by Healers only.
@@ -54,9 +55,14 @@ Gain d8 hp.
 
 <img src="/images/priests.jpg" alt="Five priests in ceremonial robes" style="width: 150px; height: auto;">
 
-## Priest
-TODO
-[The Gods & Divine Favor](/gods.md)
+## Priest of X
+* **Worship**: Perform a significant **[appeasement](link to appeasement rules)** to **X** to gain their **blessing** and an **[invocation](link to invocation magic section)** of their choosing
+	* *X is a god or suitable supernatural being*
+	* *Their blessing is a minor ability*
+	* *You can request a specific invocation, but it will require a stipulation be met.*
+* The maximum debt you can incur during an invocation is increased by +1.
+- [The Gods & Divine Favor](/gods.md).
+- Gain d6 hp.
 
 ## SHARPSHOOTER
 After a ranged attack, gain bonus weapon Damage die with this weapon on the same target until you attack another target or the combat ends.
@@ -83,15 +89,32 @@ opponent must make a Save to avoid an additional effect described by you.
 <img src="/images/fighter.jpg" alt="A stoic warrior in full plate armor" style="width: 150px; height: auto;">
 
 ## WARRIOR
-Gain bonus d4 weapon Damage die.
-Advancement: The bonus die is Raised by one.
-- Gain d8 hp.
-- TODO dedupe
+- Gain a feat from the list below.
+- Gain a d8 hp.
+
+### Feats
+Activating a feat in combat incurs 1 fatigue unless its description says otherwise.
+
+#### Defensive Feats
+
+* **Block**: Impair a d6 or d8 attack. This does not incur fatigue if you are wielding a shield.
+* **Dodge**: Impair a d8 or d10 attack. This does not incur fatigue if you are equipped with no more than light armor (1 Armor) and a d6 weapon.
+* **Parry**: When targeted by a melee attack, roll your weapon's damage die versus the incoming attack's damage die.
+    *   **If you roll higher**: You nullify the attack and deal your roll as STR damage to the attacker, bypassing their armor.
+    *   **If you roll lower**: You take the attacker's roll as STR damage, bypassing your armor.
+    *   **If you tie**: Your weapons clang off each other, and the attack is nullified.
+    *   This feat does not incur fatigue.
+
+#### Offensive Feats
+
+* **Power Attack**: Add +1d12 damage to your melee attack. Make a STR test to avoid incurring fatigue.
+* **Maneuver**: Add a tactical maneuver (e.g., trip, disarm, push) to your attack. Make two DEX tests. You can use the results as you wish to avoid incurring fatigue and to avoid any negative consequences of the maneuver.
+* **Cleave**: Your melee attack affects all targets in a specific area (e.g., all enemies in front of you). This stacks with the cleave property of weapons like the battle axe.
 
 <img src="/images/wizard.jpg" alt="A robed wizard with a long beard reading a book" style="width: 150px; height: auto;">
 
 ## Wizard: 
-- **Study**: Gain the knowlege within spellbook (a minor ability) and either A) reveal two of its spells at random, or B) [invent a new spell](/rules###Magic####SpellInvention).
-- **Memorization**: You can cast spells from memory rather than from books. Memorizing a spell takes 1 inventory slot and 1 day. When cast retroactively choose what spell it was and clear it from your inventory, but then replace it with fatigue. Casting a memorized spell takes but a gesture and a phrase, and can be done in combat.
+- **Study**: Gain the knowledge within a [spellbook](https://saltygoo.github.io/class/wizard) *(a minor ability)* and either A) reveal two of its spells at random, or B) [invent two new spells](/rules###Magic####SpellInvention).
+	- See [Vancian Magic](link to vancian magic rules)
+- You know how to wield [Spellburn](link to Spellburn secrion) to augment you spells.
 - Gain d4 hp.
-

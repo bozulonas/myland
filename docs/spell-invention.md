@@ -28,3 +28,7 @@ Below are some **example spells** formed in this way.
 *   EVOCATION
 *   ILLUSION
 *   NECROMANCY
+
+## Advanced Rules
+- if inventing a spell at a particularly notable place of power, make a suitable substitution 
+	- **Example**: If inventing a spell at a Volcano, you may substitute a word for 'Magma'

@@ -45,25 +45,24 @@ Time is relative. It flies when you're having fun, and stops during a moment of 
 - 1hr: Has elapsesed whenever a 1 is rolled on the dungeon clock.
 
 ## Magic
-#### Vancian Magic
+### Vancian Magic
 
 - Anyone cast magic by reading spells from *spell books** (or **scrolls**).
 - To cast magic, invest a number of _Mana Dice_ (d6) of your choice, up to the number you have access to. Spells will refer number of [dice] and the [sum] of the roll to determine the effect. 
-- **Spell books** take one inventory slot, start with one spell revealed and each casting adds fatigue to your inventory. It takes 10min of gesticulation and incantation to cast (1 roll of the dungeon clock) and cannot be done in combat. More spells can be unlocked by [studying](/classes/wizard.html).
-- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap]().
+- **Spell books** take one inventory slot, start with one spell revealed and each casting adds one fatigue to your inventory. It takes 10min of gesticulation and incantation to cast (1 roll of the dungeon clock) and cannot be done in combat. More spells can be unlocked from the spellbook by [studying](/classes/wizard.html) it.
+- Spells come with one *Mana Dice*, more can be attained from items, ritual or other sources. Rolling doubles causes a [mishap](#mishaps).
 
 #### Spellburn
 
 - Those skilled in the art can pay for magic through mental strain (WIL), or their own flesh (STR).
 - When casting a spell with spellburn determine with the GM the cost based on this:
 
-| Cost | Power                                                | Targets | Duration | Distance                                     |
-| ---- | ---------------------------------------------------- | ------- | -------- | -------------------------------------------- |
-| 0    | d6 or equivalent effect                              | One     | Instant  | Close                                        |
-| +1   | a Magic die is upgraded to d8, or equivalent effect  | a Few   | A minute | Within sight                                 |
-| +2   | a Magic die is upgraded to d10, or equivalent effect | Many    | An hour  | Anywhere (requires lock of hair, or similar) |
+| Cost | Power                                                | Targets | Duration | Distance                                     | Semantics                        |
+| ---- | ---------------------------------------------------- | ------- | -------- | -------------------------------------------- | -------------------------------- |
+| 0    | d6 or equivalent effect                              | One     | Instant  | Touch                                        | Adheres to spell's touchstones   |
+| +1   | a Magic die is upgraded to d8, or equivalent effect  | a Few   | A minute | Within sight                                 | Stretches plausibility           |
+| +2   | a Magic die is upgraded to d10, or equivalent effect | Many    | An hour  | Anywhere (requires lock of hair, or similar) | Severely stretches plausibility  |
 
-- If the desired effect is a close semantic match for the spells name, it gets a -1 discount.
 - After casting a spell with spellburn, make a WIL save to avoid a [spelling error](#spelling-error)
 
 ##### Spelling Error
@@ -73,7 +72,32 @@ Time is relative. It flies when you're having fun, and stops during a moment of 
 - Wizard's can choose to invent insted of studying existing spells. See [Spell invention](/spell-invention.html)
 - Invented spells can do whatever the name implies, but are limited without spellburn [spellburn](#spellburn). They start only dealing d6 damage (or equivalent effect), have a range of touch, an momentary duration, and affecting at most one target.
 
-#### Alchemy
+#### Mishaps
+When you roll doubles, look up the [sum] on [this table](https://cairnrpg.com/hacks/glog-magic/)
+
+
+### Invocation Magic
+Mortals can worship gods (*and other supernatural entities)* via appeasements, to be granted blessings as well as invocations which cost debt.
+
+#### Worship
+Is performed by taking a level in priest, involves making a major appeasement to be granted a blessing and an invocation.
+
+#### Appeasement
+- **Appeasement** means performing a rite with a suitable offering, at a sufficiently sacred site, that shows befitting humility. Major appeasements are needed for worship, smaller ones are needed for clearing debt.
+- Anyone can perform an appeasement to ask for a favor, but if you're not a priest it's [hard](link to difficulty section in rules) *(High-risk low-reward)*
+
+#### Invocation 
+* **Invocation**: Cast an invocation by using any number of Debt Dice (d6) up to your total levels in Priest. Doubles cause hubris, triples cause banishment. Add the debt used to your accumulated debt.
+
+#### Debt
+- Mortals are surprisingly well suited to being saddled with debt. Any amount of debt always takes 1 inventory slot *(it stacks)*
+* Clear debt by performing a minor to moderate appeasement *(depending on the amount of debt)*
+* At any time your god may issue a commandment, if you do not immediately fulfill it take [debt]d6 WIL damage. If you do fulfill it clear your debt.
+
+#### Hubris
+[Hubris table](link to hubris table in gods secrion)
+
+### Alchemy
 
 - Can be learned by harvesting and ingesting thirteen potent psychoactive ingredients while taking meticulous notes on their effects. Or by taking a class level in [Alchemist](/classes.html#classes##alechemist).
 - You can combine ingredients into alchemicals (potions, oils, powder, fumes). You gain **alchemists equipment** (1 inventory slot) 

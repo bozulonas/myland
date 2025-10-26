@@ -4,11 +4,28 @@
 
 *The gods are many, and their demands are great.*
 
-### Level 1
-*   **Worship**: Appease a god to gain their blessing and one of thier invocations of your choice.
-*   **Invocation**: Cast an invocation by using any number of Debt Dice (d6) up to your total levels in Priest. Doubles cause hubris, triples cause banishment. Add the debt used to your accumulated debt.
-*   **Debt**: Clear debt by performing a suitable appeasement. At any time your god may issue a commandment, if you do not immediately fulfill it take [debt]d6 WIL damage. If you do fulfill it clear your debt.
-*    **Appeasement**: Perform a rite with a suitable offering, at a sufficiently sacred site, that shows befitting humility. Major appeasements are needed for worship, smaller ones are needed for clearing debt.
+### 
+
+
+
+
+### Invocation Magic
+Mortals can beseech gods (*and other supernatural entities)* via worship and appeasements to be granted blessings as well as invocations which cost debt.
+
+#### Worship
+Is performed by taking a level in priest, involves making a major appeasement to be granted a blessing and an invocation.
+
+#### Appeasement
+- **Appeasement** means performing a rite with a suitable offering, at a sufficiently sacred site, that shows befitting humility. Major appeasements are needed for worship, smaller ones are needed for clearing debt.
+- Anyone can perform an appeasement to ask for a favor, but if you're not a priest it's [hard](link to difficulty section in rules) *(High-risk low-reward)*
+
+#### Invocation 
+* **Invocation**: Cast an invocation by using any number of Debt Dice (d6) up to your total levels in Priest. Doubles cause hubris, triples cause banishment. Add the debt used to your accumulated debt.
+
+#### Debt
+- Mortals are surprisingly well suited to being saddled with debt. Any amount of debt always takes 1 inventory slot *(it stacks)*
+* Clear debt by performing a minor to moderate appeasement *(depending on the amount of debt)*
+* At any time your god may issue a commandment, if you do not immediately fulfill it take [debt]d6 WIL damage. If you do fulfill it clear your debt.
 
 ### Level 2
 *   **Worship**

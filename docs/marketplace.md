@@ -14,7 +14,8 @@ const categories = ref(marketplaceCategories);
 </script>
 
 
-
+## Items
+Alchemically liquefied gemstone (three uses) 15g
 
 # Ship Upgrades
 
