@@ -29,33 +29,11 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { usePages } from '@temp/pages';
-
-const pages = usePages();
-console.log(pages.value);
-
-// Dynamically generate the list of items from Markdown files in the achievements directory
-const items = computed(() => {
-  if (!pages.value) {
-    return [];
-  }
-  return pages.value
-    .filter(page => page.path.startsWith('/achievements/') && page.frontmatter.title)
-    .map(page => ({
-      id: page.key,
-      title: page.frontmatter.title,
-      description: page.frontmatter.description,
-      unlocks: page.frontmatter.unlocks,
-      tags: page.frontmatter.tags || [],
-    }))
-    .sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically by title
-});
-
-const selectedTag = ref('All');
+import items from '../achievementsData.js';
 
 const allTags = computed(() => {
   const tags = new Set();
-  items.value.forEach(item => {
+  items.forEach(item => {
     if (item.tags) {
       item.tags.forEach(tag => tags.add(tag));
     }
@@ -63,11 +41,13 @@ const allTags = computed(() => {
   return ['All', ...Array.from(tags).sort()];
 });
 
+const selectedTag = ref('All');
+
 const filteredItems = computed(() => {
   if (selectedTag.value === 'All') {
-    return items.value;
+    return items;
   }
-  return items.value.filter(item => item.tags && item.tags.includes(selectedTag.value));
+  return items.filter(item => item.tags && item.tags.includes(selectedTag.value));
 });
 </script>
 

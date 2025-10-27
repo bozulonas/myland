@@ -1,7 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
-import { usePagesPlugin } from 'vuepress-plugin-use-pages'
+
 import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
@@ -15,9 +15,7 @@ export default defineUserConfig({
       },
     },
   }),
-  plugins: [
-    usePagesPlugin(),
-  ],
+  plugins: [],
   theme: defaultTheme({
     // Navigation
     navbar: [
