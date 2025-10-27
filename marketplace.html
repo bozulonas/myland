@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.24" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <meta name="license" content="CC BY 4.0"><title>Marketplace | Myland</title><meta name="description" content="Official house rules website for our TTRPG">
+    <link rel="preload" href="/assets/style-CpM6qqCF.css" as="style"><link rel="stylesheet" href="/assets/style-CpM6qqCF.css">
+    <link rel="modulepreload" href="/assets/app-B7AN5DHo.js"><link rel="modulepreload" href="/assets/marketplace.html-CD_vPu6r.js">
+    <link rel="prefetch" href="/assets/index.html-ChjRhuXt.js" as="script"><link rel="prefetch" href="/assets/Tables for myland.html-Dx5SkZSZ.js" as="script"><link rel="prefetch" href="/assets/achievements.html-1OE-3Jil.js" as="script"><link rel="prefetch" href="/assets/classes.html-Cd3JYRr9.js" as="script"><link rel="prefetch" href="/assets/gods.html-WStlRDiu.js" as="script"><link rel="prefetch" href="/assets/instructions for achievements refactor.html-D597YGCH.js" as="script"><link rel="prefetch" href="/assets/rules.html-Dmcb2osm.js" as="script"><link rel="prefetch" href="/assets/spell-invention.html-DH906tbm.js" as="script"><link rel="prefetch" href="/assets/a-shadow-in-the-night.html-C9PzaFS1.js" as="script"><link rel="prefetch" href="/assets/divine-intervention.html-CXlRMLdl.js" as="script"><link rel="prefetch" href="/assets/dragon-slayer.html-F01sO3V2.js" as="script"><link rel="prefetch" href="/assets/first-blood.html-DCe_2RNM.js" as="script"><link rel="prefetch" href="/assets/loremaster.html-S8_FKIUn.js" as="script"><link rel="prefetch" href="/assets/master-of-the-arcane.html-Br2FhKau.js" as="script"><link rel="prefetch" href="/assets/shield-wall.html-COUDsuC6.js" as="script"><link rel="prefetch" href="/assets/the-silver-tongue.html-DBgBu5Kx.js" as="script"><link rel="prefetch" href="/assets/fighter.html-DAReD0iu.js" as="script"><link rel="prefetch" href="/assets/priest.html-CJfiHejE.js" as="script"><link rel="prefetch" href="/assets/thief.html-CsxbwjkG.js" as="script"><link rel="prefetch" href="/assets/wizard.html-UoXZJTMv.js" as="script"><link rel="prefetch" href="/assets/404.html-DamVD1PG.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container no-sidebar external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/"><!----><span class="vp-site-name" aria-hidden="true">Myland</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Home"><!--[--><!--[--><!--]--><!--]-->Home<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/rules.html" aria-label="Rules"><!--[--><!--[--><!--]--><!--]-->Rules<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/classes.html" aria-label="Classes"><!--[--><!--[--><!--]--><!--]-->Classes<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/gods.html" aria-label="Gods"><!--[--><!--[--><!--]--><!--]-->Gods<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/achievements.html" aria-label="Achievements"><!--[--><!--[--><!--]--><!--]-->Achievements<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/marketplace.html" aria-label="Marketplace"><!--[--><!--[--><!--]--><!--]-->Marketplace<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/spell-invention.html" aria-label="Spell Invention"><!--[--><!--[--><!--]--><!--]-->Spell Invention<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/" aria-label="Home"><!--[--><!--[--><!--]--><!--]-->Home<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/rules.html" aria-label="Rules"><!--[--><!--[--><!--]--><!--]-->Rules<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/classes.html" aria-label="Classes"><!--[--><!--[--><!--]--><!--]-->Classes<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/gods.html" aria-label="Gods"><!--[--><!--[--><!--]--><!--]-->Gods<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/achievements.html" aria-label="Achievements"><!--[--><!--[--><!--]--><!--]-->Achievements<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/marketplace.html" aria-label="Marketplace"><!--[--><!--[--><!--]--><!--]-->Marketplace<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/spell-invention.html" aria-label="Spell Invention"><!--[--><!--[--><!--]--><!--]-->Spell Invention<!--[--><!--[--><!--]--><!--]--></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div id="content"><h1 id="marketplace" tabindex="-1"><a class="header-anchor" href="#marketplace"><span>Marketplace</span></a></h1><div class="marketplace-accordion" data-v-61f2b7cf><!--[--><div class="accordion-item" data-open="false" data-v-61f2b7cf><button class="accordion-trigger" data-v-61f2b7cf>Armor</button><div class="accordion-content" data-v-61f2b7cf><div data-v-61f2b7cf>
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Details</th>
+      <th>GP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shield</td>
+      <td>+1 Armor</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Helmet</td>
+      <td>+1 Armor</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Gambeson</td>
+      <td>+1 Armor</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Brigandine</td>
+      <td>1 Armor, bulky</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Chainmail</td>
+      <td>2 Armor, bulky</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Plate</td>
+      <td>3 Armor, bulky</td>
+      <td>60</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div><div class="accordion-item" data-open="false" data-v-61f2b7cf><button class="accordion-trigger" data-v-61f2b7cf>Services</button><div class="accordion-content" data-v-61f2b7cf><div data-v-61f2b7cf>
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Details</th>
+      <th>GP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Room & Board</td>
+      <td>per night</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Private Room & Board</td>
+      <td>fits 4</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Stable & Feed</td>
+      <td>per night</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Medical Healing</td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Rations</td>
+      <td>3 uses</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Animal Feed</td>
+      <td>3 uses, bulky</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div><div class="accordion-item" data-open="false" data-v-61f2b7cf><button class="accordion-trigger" data-v-61f2b7cf>Hirelings</button><div class="accordion-content" data-v-61f2b7cf><div data-v-61f2b7cf>
+<table>
+  <thead>
+    <tr>
+      <th>Hireling</th>
+      <th>Daily Rate, GP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alchemist</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Navigator</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Animal Handler</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sailor</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Blacksmith</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Scholar</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Bodyguard</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Tracker</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Local Guide</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Trapper</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Lockpick</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Veteran Bodyguard</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div><div class="accordion-item" data-open="false" data-v-61f2b7cf><button class="accordion-trigger" data-v-61f2b7cf>Gear</button><div class="accordion-content" data-v-61f2b7cf><div data-v-61f2b7cf>
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Details</th>
+      <th>GP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Air Bladder</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Antitoxin</td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Bandages</td>
+      <td>3 uses</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Bathing Goods (Soap, Perfume, etc.)</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Book</td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Caltrops</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Card Deck</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Chain</td>
+      <td>10ft</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Chalk</td>
+      <td>petty</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chest</td>
+      <td></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Chisel</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Common Agents (Glue, Grease, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Common Tools (Hammer, Shovel, etc.)</td>
+      <td></td>
+      .<td>10</td>
+    </tr>
+    <tr>
+      <td>Compass</td>
+      <td></td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>Complex Instruments (Bagpipes, Fiddle, etc.)</td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Containers (Sack, Waterskin, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Cooking Gear (Pots, Utensils, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Costume Gear (Face Paint, Disguise)</td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Dowsing Rod</td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Expeditionary Gear (Climbing Spikes, Pulley, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Fire Oil</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Fishing Rod</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Games (Cards, Dice, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Gloves</td>
+      <td>petty</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Grappling Hook</td>
+      <td></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Lantern</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Mirror</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Net</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Oil Can</td>
+      <td>6 uses</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Outdoor Comfort (Blanket, Hammock, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Parchment</td>
+      <td>3 uses</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Pole</td>
+      <td>10ft</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Repellent (Wolfsbane, Mugwort, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Rope</td>
+      <td>25ft</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sedative</td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Sewing Kit</td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Simple Instruments (Pipes, Lute, etc.)</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Smoking Pipe</td>
+      <td>petty</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Specialized Tools (Ink, etc.)</td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Spiked Boots</td>
+      <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Spyglass</td>
+      <td></td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Tent</td>
+      <td>fits 2, bulky</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Thieving Tools (Lockpick, Metal File, etc.)</td>
+      <td></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Torch</td>
+      <td>3 uses</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Trap</td>
+      <td>d6 STR damage</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Whistle</td>
+      <td>petty</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Wilderness Clothes (Poncho, Cloak, etc.)</td>
+      <td>petty</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div><!--]--></div><h2 id="items" tabindex="-1"><a class="header-anchor" href="#items"><span>Items</span></a></h2><p>Alchemically liquefied gemstone (three uses) 15g</p><h1 id="ship-upgrades" tabindex="-1"><a class="header-anchor" href="#ship-upgrades"><span>Ship Upgrades</span></a></h1><table><thead><tr><th><strong>Upgrade</strong></th><th><strong>Bulk</strong></th><th><strong>City (gp)</strong></th><th><strong>Town (gp)</strong></th><th><strong>Time</strong></th><th><strong>Notes</strong></th></tr></thead><tbody><tr><td><strong>Ballista</strong></td><td>1–3</td><td>100 gp per Bulk</td><td>300 gp per Bulk</td><td>4 days per Bulk</td><td>Range 500&#39; × Bulk.</td></tr><tr><td><strong>Ballista Bolt</strong></td><td>0.1</td><td>2.5 gp</td><td>5 gp</td><td>1 minute</td><td>~10&#39; long.</td></tr><tr><td><strong>Ballista Cable, 100&#39;</strong></td><td>0.1</td><td>1.5 gp</td><td>3 gp</td><td>1 minute</td><td>Attaches to bolts.</td></tr><tr><td><strong>Ballista Chain, 100&#39;</strong></td><td>0.2</td><td>1 gp</td><td>2.5 gp</td><td>1 minute</td><td>Attaches to bolts. Halves range.</td></tr><tr><td><strong>Battering Ram</strong></td><td>2</td><td>200 gp</td><td>500 gp</td><td>2 days</td><td>Deals 1 Bulk damage per 5 Zest.</td></tr><tr><td><strong>Bladed Siding</strong></td><td>1</td><td>200 gp</td><td>300 gp</td><td>3 days</td><td>Cuts ships and boarders.</td></tr><tr><td><strong>Boarding Planks</strong></td><td>1</td><td>50 gp</td><td>100 gp</td><td>1 day</td><td>40&#39; long. Retractable.</td></tr><tr><td><strong>Catapult</strong></td><td>3</td><td>400 gp</td><td>600 gp</td><td>1 week</td><td>Range 1,000&#39;.</td></tr><tr><td><strong>Diving Bell-Tank</strong></td><td>2</td><td>75 gp</td><td>150 gp</td><td>2 days</td><td>Grants 2 hours of air. 100&#39; chain.</td></tr><tr><td><strong>Fireproof Sails</strong></td><td>0</td><td>1 gp per yard</td><td>2.5 gp per yard</td><td>1 minute per yard</td><td>Leathery-brown look.</td></tr><tr><td><strong>Flamethrower</strong></td><td>2</td><td>750 gp</td><td>1,500 gp</td><td>1 month</td><td>100&#39; cone. 2.5 gp of oil per shot. 2 minute reload.</td></tr><tr><td><strong>Gunwale Crossbow</strong></td><td>0.1</td><td>7.5 gp</td><td>20 gp</td><td>1 hour</td><td>Pintle-mounted.</td></tr><tr><td><strong>Ironclad Masts</strong></td><td>20% total Bulk</td><td>200 gp × Bulk</td><td>400 gp × Bulk</td><td>1 day per Bulk</td><td>+[Bulk / 5] Zest, rounded down.</td></tr><tr><td><strong>Reinforced Hull</strong></td><td>10% total Bulk</td><td>100 gp per Bulk</td><td>200 gp per Bulk</td><td>2 days per Bulk</td><td>Negates Naval Chaos effects on the hull.</td></tr><tr><td><strong>Smuggler&#39;s Holes</strong></td><td>1:1</td><td>20 gp per Bulk converted</td><td>10 gp per Bulk converted</td><td>1 day per Bulk converted</td><td>Hides an equal amount of bulk in the cargo hold.</td></tr></tbody></table></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Last Updated: </span><time class="meta-item-info" datetime="2025-10-26T02:59:41.000Z" data-allow-mismatch>10/26/25, 2:59 AM</time></div><div class="vp-meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 161369871+google-labs-jules[bot]@users.noreply.github.com">google-labs-jules[bot]</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: kevinzulonas@gmail.com">Bo</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: kevinzulonas@gmail.com">bozulonas</span><!----><!--]--><!--]--></span></div></div></footer><!----><!--[--><!--]--></main><!--]--></div><!--[--><!----><span data-v-f1665821></span><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-B7AN5DHo.js" defer></script>
+  </body>
+</html>
