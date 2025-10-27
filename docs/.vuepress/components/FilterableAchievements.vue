@@ -15,10 +15,7 @@
     <ul class="content-list">
       <li v-for="item in filteredItems" :key="item.id" class="content-item">
         <h3>{{ item.title }}</h3>
-        <p>{{ item.description }}</p>
-        <div v-if="item.unlocks" class="unlocks-section">
-          <strong>Unlocks:</strong> {{ item.unlocks }}
-        </div>
+        <div v-html="item.content"></div>
         <div class="item-tags">
           <span v-for="tag in item.tags" :key="tag" class="item-tag">{{ tag }}</span>
         </div>
@@ -93,7 +90,9 @@ const filteredItems = computed(() => {
 }
 
 .content-item h3 {
-  margin-top: 0;
+  margin-top: 0 !important;
+  margin-block-start: 0 !important;
+  padding-top: 0 !important;
   color: var(--c-brand);
 }
 
