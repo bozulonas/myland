@@ -1,6 +1,10 @@
 ---
-title: Welcome to Quartz
+title: Myland
 ---
+House rules for [Into the Odd](https://freeleaguepublishing.com/games/into-the-odd/) / [Cairn](https://cairnrpg.com/).
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Quick links
+> [[Core Rules]]
+> [[Classes]]
+
+
