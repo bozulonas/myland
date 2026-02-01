@@ -1,6 +1,6 @@
 
 [Gain a class level](Core%20Rules.md#Advancement#Class+Levels) by spending 5x [new level] XP. 
-You can take the same class more than once!
+You can take the same class more than once.
 
 
 ![[Pasted image 20251107222634.png]]
