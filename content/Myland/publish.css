@@ -1,0 +1,85 @@
+/* ----------------------------------------------------------------------- */
+/* FONT IMPORTS (FROM GOOGLE FONTS)
+/* ----------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* ----------------------------------------------------------------------- */
+/* THEME & COLOR VARIABLES
+/* ----------------------------------------------------------------------- */
+
+.theme-light {
+  --background-primary: #ffffff; /* White */
+  --text-normal: #3c2f2f;         /* Dark Brown/Black */
+  --text-faint: #5f4a4a;          /* Faded Brown */
+  --text-a: #8b0000;              /* Dark Red for links */
+  --text-a-hover: #ad4f4f;        /* Lighter Red for link hover */
+  --interactive-accent: #8b0000;   /* Dark Red for accents */
+}
+
+/* Ensure dark theme uses the same light theme variables for a consistent look */
+.theme-dark {
+  --background-primary: #ffffff;
+  --text-normal: #3c2f2f;
+  --text-faint: #5f4a4a;
+  --text-a: #8b0000;
+  --text-a-hover: #ad4f4f;
+  --interactive-accent: #8b0000;
+}
+
+/* ----------------------------------------------------------------------- */
+/* FONT FAMILY ASSIGNMENTS
+/* ----------------------------------------------------------------------- */
+
+.published-container {
+  /* -- BODY FONT -- */
+  --font-family-base: 'EB Garamond', serif;
+
+  /* -- HEADER FONTS -- */
+  --font-family-h1: 'IM Fell English', serif;
+  --font-family-h2: 'IM Fell English', serif;
+  --font-family-h3: 'IM Fell English', serif;
+  --font-family-h4: 'IM Fell English', serif;
+  --font-family-h5: 'IM Fell English', serif;
+  --font-family-h6: 'IM Fell English', serif;
+
+  /* For Obsidian Publish v1.0.0+ these might be used instead */
+  --font-text-theme: 'EB Garamond', serif;
+  --page-title-font: 'IM Fell English', serif;
+}
+
+.published-container h1,
+.published-container h2,
+.published-container h3,
+.published-container h4,
+.published-container h5,
+.published-container h6 {
+  font-family: var(--font-family-h1);
+}
+
+/* Lightbox styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox .internal-embed {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
