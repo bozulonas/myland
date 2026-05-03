@@ -31,11 +31,12 @@ You can also bargain for an easier save.
 **Deprivation**: If lacking food/rest, you cannot recover HP/Stats and gain Fatigue daily.
 
 # Magic Items
-**Items have Charges** (usually 3). To use, declare how many charges (dice) you are investing:
-**Effect**: Sum of all dice rolled.
-For each die:
-- 4-5: Consumes a charge.
-- 6: Explodes (roll another d6).
-- Doubles: Mishap. 
-- Triples: Doom.
-**Recharge**: Requires a specific action to refresh all charges.
+- **Items have Charges** (usually 3). To use, declare how many charges (dice) you are investing:
+- **Effect**: Sum of all dice rolled.
+- For each die:
+	- 4-5: Consumes a charge.
+	- 6: Explodes (roll another d6).
+- If you roll:
+	- Doubles: Mishap. 
+	- Triples: Doom.
+- **Recharge**: Requires a specific action to refresh all charges.
